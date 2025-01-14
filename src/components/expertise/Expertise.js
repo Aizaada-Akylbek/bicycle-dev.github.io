@@ -46,6 +46,11 @@ const Expertise = () => {
       width: 100,
     },
   ]
+  const [expandedIndex, setExpandedIndex] = useState(null);
+  const handleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index); // Если блок уже раскрыт, скрыть его
+  };
+
   
   return (
     <div className="expertise">
@@ -55,7 +60,7 @@ const Expertise = () => {
         className="services-blocks"
         style={{ display: "flex", justifyContent: "space-between" }}
       >
-        {expertiseData.map((expData) => (
+        {expertiseData.map((expData, index) => (
           <div
             className="service-block"
             style={{ width: `${expData.width}%` }}
@@ -63,7 +68,22 @@ const Expertise = () => {
           >
             <img src={expData.icon} alt={expData.icon} />
             <div className="service-block-title dark-blue">{expData.title}</div>
-            <p>{expData.description}</p>
+            <p>
+              {/* {expData.description.slice(0, 150)}... */}
+                         {/* Если блок раскрыт, показываем полный текст */}
+                         {expandedIndex === index
+                ? expData.description
+                : expData.description.slice(0, 150) + " ... "}
+              {/* Кнопка для раскрытия текста */}
+              {expData.description.length > 150 && (
+                <span
+                  style={{ color: "blue", cursor: "pointer" }}
+                  onClick={() => handleExpand(index)}
+                >
+                  {expandedIndex === index ? "" : t("more")}
+                </span>
+              )}
+              </p>
           </div>
         ))}
       </div>

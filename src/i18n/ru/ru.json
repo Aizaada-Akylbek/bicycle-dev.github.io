@@ -11,6 +11,7 @@
     " dynamic growth": " динамичного роста",
     "We are pleased to offer a wide range of high quality IT services.": "Мы рады предложить широкий спектр высококачественных IT-услуг.",
     "OUR MISSION": "НАША МИССИЯ",
+    "Our services":"Наши услуги",
     "Our mission is to": "Наша миссия - ",
     "create an inclusive and advanced world": "создание инклюзивного и передового мира",
     "through digital and technological transformation.": "посредством цифровых и технологических преобразований.",
@@ -24,7 +25,7 @@
     "Frequently Asked": "Часто Задаваемые",
     "Questions": "Вопросы",
     "We tried to answer most common questions, if you have any additional, please get in touch with our friendly team": "Мы постарались ответить на самые распространенные вопросы, если у вас возникли дополнительные, пожалуйста, свяжитесь с нашей дружной командой",
-    "1.What is outstaffing and outsourcing, and how do they differ?": "1.Что такое аутстаффинг и аутсорсинг и чем они отличаются?",
+    "1. What is outstaffing and outsourcing, and how do they differ?": "1.Что такое аутстаффинг и аутсорсинг и чем они отличаются?",
     "Outstaffing involves hiring dedicated professionals who work remotely but are fully integrated into your team and under your management. Outsourcing, on the other hand, entails delegating specific tasks or projects to an external team or company. See:": "Аутстаффинг предполагает наем профильных специалистов, которые работают удаленно, но полностью интегрированы в вашу команду и находятся под вашим руководством. Аутсорсинг, с другой стороны, подразумевает делегирование определенных задач или проектов внешней команде или компании. См:",
     "2. What types of IT services do you offer through outstaffing and outsourcing?": "2. Какие виды IT-услуг вы предлагаете с помощью аутстаффинга и аутсорсинга?", 
     "We offer a comprehensive range of IT services, including software development, web development, mobile app development, QA and testing, UI/UX design, IT infrastructure management, and more. See:":"Мы предлагаем полный спектр IT-услуг, включая разработку программного обеспечения, веб-разработку, разработку мобильных приложений, QA и тестирование, UI/UX-дизайн, управление ИТ-инфраструктурой и многое другое. См.:", 
@@ -195,7 +196,8 @@
     "Paste link":"Вставить ссылку",
     "By submitting your application, you consent to the storage of your CV in our database of candidates. If we have another vacancy that suits you, we may contact you":"Отправляя заявку, вы даете согласие на хранение вашего резюме в нашей базе данных кандидатов. Если у нас появится другая вакансия, которая вам подходит, мы можем связаться с вами.",
     "I want to work for BicycleDev":"Я хочу работать в BicycleDev", 
-    "More":"Подробнее"
+    "More":"Подробнее", 
+    "More": "подробнее"
   
   
   }

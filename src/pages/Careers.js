@@ -19,7 +19,7 @@ const Careers = () => {
         </p>
         <NavLink to="/positions" href="#main-positions">
           {" "}
-          <button className="main-btn">Label</button>
+          <button className="main-btn">{t("Apply now")}</button>
         </NavLink>
       </div>
       <CareersCards />

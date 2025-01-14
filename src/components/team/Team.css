@@ -54,7 +54,7 @@
     position: absolute;
     bottom:  0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     border-radius: inherit;
     opacity: 0;
@@ -73,9 +73,9 @@
   
   
   .image-text h6 {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 300;
-    color: grey;
+    color: rgb(174, 174, 174);
   }
   
   .image-text h3 {

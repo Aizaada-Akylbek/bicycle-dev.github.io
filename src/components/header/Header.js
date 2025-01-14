@@ -91,9 +91,9 @@ const Header = () => {
             <li onClick={() => setIsOpen(false)}>
               <NavLink to="/calendar">{t("Calendar")}</NavLink>
             </li>
-            <li onClick={() => setIsOpen(false)}>
+            {/* <li onClick={() => setIsOpen(false)}>
               <NavLink to="/employees">{t("Employees")}</NavLink>
-            </li>
+            </li> */}
             <li onClick={() => setIsOpen(false)}>
               <NavLink to="/contacts">{t("Contacts")}</NavLink>
             </li>

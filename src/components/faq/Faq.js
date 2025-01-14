@@ -8,12 +8,12 @@ const Faq = () => {
 
   const faqText=[
     {
-      text: t("1.What is outstaffing and outsourcing, and how do they differ?"),
+      text: t("1. What is outstaffing and outsourcing, and how do they differ?"),
       desc:t("Outstaffing involves hiring dedicated professionals who work remotely but are fully integrated into your team and under your management. Outsourcing, on the other hand, entails delegating specific tasks or projects to an external team or company. See:"),linkTitle:t("Services"), link:'/services'
     },
     {
       text: t("2. What types of IT services do you offer through outstaffing and outsourcing?"),
-      desc: t("We offer a comprehensive range of IT services, including software development, web development, mobile app development, QA and testing, UI/UX design, IT infrastructure management, and more. See:"),linkTitle:t('Expertise'), link:''
+      desc: t("We offer a comprehensive range of IT services, including software development, web development, mobile app development, QA and testing, UI/UX design, IT infrastructure management, and more. See:"),linkTitle:t('Industries'), link:''
     },
     {
       text: t("3. How does your outstaffing service work?"),
@@ -84,7 +84,8 @@ const Faq = () => {
         <div className="faq-toggle">
           {faqText.map((el, index) => (
             <div className="faqs" key={index}>
-              <div className="faq-question">
+                     <NavLink className='dark-blue' >
+              <div className="faq-question" onClick={() => toggleAnswer(index)}>
                 <h4>{el.text}</h4>
                 <button onClick={() => toggleAnswer(index)}>
                   {openIndex === index ? (
@@ -95,9 +96,14 @@ const Faq = () => {
                 </button>
               </div>
               {openIndex === index && (
-                <div className="faq-answer">{el.desc} <NavLink className='dark-blue' to={el.link}>{el.linkTitle}</NavLink> </div>
+                <div className="faq-answer">{el.desc}
+                  <NavLink className='light-blue' to={el.link}> {el.linkTitle}</NavLink>
+               </div>
               )}
+                      </NavLink> 
+
             </div>
+
           ))}
         </div>
   

@@ -7,6 +7,7 @@
     "Careers": "Karriere",
     "Employees": "Mitarbeiter",
     "Contacts": "Kontakte",
+    "Our services":"Unsere Leistungen",
     "Technical innovation for": "Technische Innovation für",
     " dynamic growth": " dynamisches Wachstum",
     "We are pleased to offer a wide range of high quality IT services.": "Wir freuen uns, eine breite Palette hochwertiger IT-Dienstleistungen anbieten zu können.",
@@ -24,7 +25,7 @@
     "Frequently Asked": "Häufig gestellte",
     "Questions": "Fragen",
     "We tried to answer most common questions, if you have any additional, please get in touch with our friendly team": "Wir haben versucht, die häufigsten Fragen zu beantworten. Wenn Sie weitere Fragen haben, wenden Sie sich bitte an unser freundliches Team",
-    "1.What is outstaffing and outsourcing, and how do they differ?": "1. was ist Outstaffing und Outsourcing, und wie unterscheiden sie sich?",
+    "1. What is outstaffing and outsourcing, and how do they differ?": "1. was ist Outstaffing und Outsourcing, und wie unterscheiden sie sich?",
     "Outstaffing involves hiring dedicated professionals who work remotely but are fully integrated into your team and under your management. Outsourcing, on the other hand, entails delegating specific tasks or projects to an external team or company. See:": "Beim Outstaffing werden engagierte Fachkräfte eingestellt, die aus der Ferne arbeiten, aber vollständig in Ihr Team integriert sind und unter Ihrer Leitung stehen. Beim Outsourcing hingegen werden bestimmte Aufgaben oder Projekte an ein externes Team oder Unternehmen delegiert. Siehe:",
     "2. What types of IT services do you offer through outstaffing and outsourcing?": "2. Welche Arten von IT-Dienstleistungen bieten Sie durch Outstaffing und Outsourcing an?", 
     "We offer a comprehensive range of IT services, including software development, web development, mobile app development, QA and testing, UI/UX design, IT infrastructure management, and more. See:":"Wir bieten ein umfassendes Angebot an IT-Dienstleistungen, darunter Softwareentwicklung, Webentwicklung, Entwicklung mobiler Anwendungen, Qualitätssicherung und Tests, UI/UX-Design, IT-Infrastrukturmanagement und vieles mehr. Siehe:", 
@@ -197,6 +198,7 @@
    "Paste link":"Link einfügen",
    "By submitting your application, you consent to the storage of your CV in our database of candidates. If we have another vacancy that suits you, we may contact you":"Mit dem Absenden Ihrer Bewerbung stimmen Sie der Speicherung Ihres Lebenslaufs in unserer Kandidatendatenbank zu. Wenn wir eine andere passende Stelle für Sie haben, können wir Sie kontaktieren",
    "I want to work for BicycleDev":"Ich möchte für BicycleDev arbeiten",
-   "More":"Mehr"
+   "More":"Mehr", 
+   "more":"mehr"
   }
   

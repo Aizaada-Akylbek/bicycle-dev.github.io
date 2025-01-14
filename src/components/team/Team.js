@@ -3,6 +3,7 @@ import Askat from "../../assets/team/Askat.jpg";
 import Farkhat from "../../assets/team/Farkhat.jpg";
 import Zhandos from "../../assets/team/Zhandos.jpg";
 import Adilet from "../../assets/team/Adilet.jpg";
+import Aizaada from '../../assets/employeesImgs/Снимок экрана 2024-05-23 в 2.44.50 PM.png';
 import { NavLink } from "react-router-dom";
 import LD from "../../assets/logoLinks/LinkedIn.svg";
 import "./Team.css";
@@ -19,7 +20,7 @@ const Team = () => {
     {
       img: Farkhat,
       name: "Farkhat Baktiyar",
-      position: "Director",
+      position: "Business Development Manager",
       lnkdn: "https://www.linkedin.com/in/farkhat-baktiyar-8626791a8/",
     },
     {
@@ -29,10 +30,10 @@ const Team = () => {
       lnkdn: "https://www.linkedin.com/feed/",
     },
     {
-      img: Zhandos,
-      name: "Zhandos Manapov",
+      img: Aizaada,
+      name: "Aizaada Akylbekova",
       position: "Frontend Developer",
-      lnkdn: "https://www.linkedin.com/in/zhandos-manapov-b165a31a9/",
+      lnkdn: "https://www.linkedin.com",
     },
   ];
   const { t } = useTranslation();

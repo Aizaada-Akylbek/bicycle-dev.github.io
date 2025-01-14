@@ -2,6 +2,7 @@ import React from "react";
 //css
 import "./Mission.css";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const Mission = () => {
   const {t}=useTranslation()
@@ -16,7 +17,11 @@ const Mission = () => {
           </span>{" "}
           {t('through digital and technological transformation.')}
         </p>
-        <button className="main-btn">{t('Label')}</button>
+        <NavLink to="/services">
+        <button className="main-btn">{t('Our services')}</button>
+
+
+        </NavLink>
       </div>
     </div>
   );

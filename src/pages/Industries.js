@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Industries.css";
 import DevOperations from "../components/ui/devOperations/DevOperations";
 import { NavLink } from "react-router-dom";
@@ -33,6 +33,10 @@ const Industries = () => {
        t( "In the ever-changing realm of financial technology (fintech), adaptability, security, and inventive solutions are essential. From state-of-the-art payment processing systems and digital banking platforms to blockchain innovations and automated investment advisory services, we harness advanced technologies to cater to the unique requirements of fintech firms, banking institutions, and financial organizations. Our solutions empower enterprises to streamline operations, minimize expenses, and deliver seamless digital experiences to their customers.With a profound comprehension of the intricacies and potential of the fintech sector, we are dedicated to delivering inventive IT solutions that enable businesses to flourish and outpace their competitors."),
     },
   ];
+  const [expandedIndex, setExpandedIndex] = useState(null);
+  const handleExpand = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index); // Если блок уже раскрыт, скрыть его
+  };
   return (
     <div className="industries ">
       <div className="container">
@@ -61,11 +65,26 @@ const Industries = () => {
 
         <div className="industries-cards">
           <div className="bg-medium bg-industries-cards" />
-          {industriesData.map((el) => (
+          {industriesData.map((el, index) => (
             <div className="industries-card">
               <h3 className="poppins middle-blue">{el.number}</h3>
               <h4 className="dark-blue">{el.title}</h4>
-              <p>{el.description}</p>
+              <p>
+                 {/* {expData.description.slice(0, 150)}... */}
+                         {/* Если блок раскрыт, показываем полный текст */}
+                         {expandedIndex === index
+                ? el.description
+                : el.description.slice(0, 150) + " ... "}
+              {/* Кнопка для раскрытия текста */}
+              {el.description.length > 150 && (
+                <span
+                  style={{ color: "blue", cursor: "pointer" }}
+                  onClick={() => handleExpand(index)}
+                >
+                  {expandedIndex === index ? "" : t("more")}
+                </span>
+              )}
+              </p>
             </div>
           ))}
         </div>

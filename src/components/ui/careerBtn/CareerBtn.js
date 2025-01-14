@@ -12,16 +12,20 @@ const CareerBtn = () => {
   const { t } = useTranslation();
   return (
     <div className="info-block">
+              <NavLink to="/careers">
+
       <div className="info-title">
-        <h4>{t("Careers")}</h4>
-        <NavLink to="/careers">
+        <h4>{t("Reviews")}</h4>
+        {/* <NavLink to="/careers"> */}
           <img src={RightLine} alt="employees" />
-        </NavLink>
+        {/* </NavLink> */}
       </div>
-      <NavLink to="/careers">
-        {" "}
-        <button>{t("More")}</button>
+      {/* <NavLink to="/careers"> */}
+        {t("More")}
+        {/* <button>{t("More")}</button> */}
+      {/* </NavLink> */}
       </NavLink>
+
     </div>
   );
 };

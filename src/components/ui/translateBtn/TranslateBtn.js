@@ -7,7 +7,7 @@ const TranslateBtn = () => {
   const options = [
     { label: "EN", value: "en" },
     { label: "RU", value: "ru" },
-    { label: "GE", value: "ge" },
+    { label: "DE", value: "de" },
   ];
   function handleChange(event) {
     const language = event.target.value;

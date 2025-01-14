@@ -8,15 +8,17 @@ const EmployeesBtn = () => {
   const { t } = useTranslation();
   return (
     <div className="info-block">
+       <NavLink to="https://wa.me/00491775571132">
       <div className="info-title">
-        <h4>{t("Our employees")}</h4>
-        <NavLink to="/careers">
+        <h4>{t("Contact us")}</h4>
+        {/* <NavLink to="https://wa.me/00491775571132"> */}
           <img src={RightLine} alt="employees" />
-        </NavLink>
+        {/* </NavLink> */}
       </div>
-      <NavLink to="/employees">
-        {" "}
-        <button>{t("More")}</button>
+      {/* <NavLink to="https://wa.me/00491775571132"> */}
+        {t("More")}
+        {/* <button>{t("More")}</button> */}
+      {/* </NavLink> */}
       </NavLink>
     </div>
   );

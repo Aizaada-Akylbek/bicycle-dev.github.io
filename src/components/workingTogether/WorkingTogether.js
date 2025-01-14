@@ -35,7 +35,7 @@ const WorkingTogether = () => {
 
           <div className="contact-location">
             <h4>{t("Contact us")}:</h4>
-            <h5>team@bicycle-dev.com</h5>
+            <h5>askat.baktiyar@bicycle-dev.com</h5>
             <div className="contact-us">
               <div className="contact-tel">
                 <img src={Phone} alt="" />

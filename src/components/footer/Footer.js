@@ -190,6 +190,7 @@ import TW from "../../assets/logoLinks/Twitter.svg";
 import IG from "../../assets/logoLinks/Instagram.svg";
 import LN from "../../assets/logoLinks/LinkedIn.svg";
 import YT from "../../assets/logoLinks/YouTube.svg";
+import WhatsApp from '../../assets/logoLinks/Whatsapp.svg'
 import { useTranslation } from "react-i18next";
 import emailjs from "emailjs-com"; // Make sure to install emailjs-com
 
@@ -298,11 +299,12 @@ const Footer = () => {
               </div>
               {error && <div className="error">{error}</div>}
               <div className="logoLinks">
-                <img src={FB} alt="Facebook" />
+                {/* <img src={FB} alt="Facebook" />
                 <img src={TW} alt="Twitter" />
-                <img src={IG} alt="Instagram" />
-                <img src={LN} alt="LinkedIn" />
-                <img src={YT} alt="YouTube" />
+                <img src={IG} alt="Instagram" /> */}
+              <NavLink to="https://www.linkedin.com/company/bicycle-dev/">    <img src={LN} alt="LinkedIn" /></NavLink>
+              <NavLink to=""><img src={WhatsApp} alt="Whatsapp"/></NavLink>
+                {/* <img src={YT} alt="YouTube" /> */}
               </div>
             </div>
             <div className="footerNav">
@@ -312,7 +314,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="copyright">
-            Copyright © 2024. Bicycle Dev. All rights reserved.
+            Copyright © 2025. Bicycle Dev. All rights reserved.
           </div>
         </div>
       </div>
