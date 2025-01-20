@@ -10,6 +10,7 @@ import LinkedIn from "../../assets/contactUs/LinkedIn.svg";
 import Instagram from "../../assets/contactUs/Instagram.svg";
 import YouTube from "../../assets/contactUs/YouTube.svg";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const WorkingTogether = () => {
   const { t } = useTranslation();
@@ -35,12 +36,16 @@ const WorkingTogether = () => {
 
           <div className="contact-location">
             <h4>{t("Contact us")}:</h4>
-            <h5>askat.baktiyar@bicycle-dev.com</h5>
+            <h5>
+            {/* <a href="mailto:askat.baktiyar@bicycle-dev.com">Напишите мне на почту</a> */}
+              <a className="dark-blue" href="mailto:askat.baktiyar@bicycle-dev.com" > askat.baktiyar@bicycle-dev.com
+              </a>
+            </h5>
             <div className="contact-us">
               <div className="contact-tel">
-                <img src={Phone} alt="" />
+               <NavLink> <img src={Phone} alt="" /></NavLink>
 
-                <img src={WhatsApp} alt="" />
+                <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="" /></NavLink>
 
                 <h5>+49 177 470 54 40</h5>
               </div>

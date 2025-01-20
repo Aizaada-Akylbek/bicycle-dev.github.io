@@ -191,6 +191,7 @@ import IG from "../../assets/logoLinks/Instagram.svg";
 import LN from "../../assets/logoLinks/LinkedIn.svg";
 import YT from "../../assets/logoLinks/YouTube.svg";
 import WhatsApp from '../../assets/logoLinks/Whatsapp.svg'
+import BicycleWhiteLogo from '../../assets/logos/WhiteMainLogo.png'
 import { useTranslation } from "react-i18next";
 import emailjs from "emailjs-com"; // Make sure to install emailjs-com
 
@@ -264,7 +265,7 @@ const Footer = () => {
 
   const renderNavList = (title) => (
     <ul className="footerNavList">
-      <h2>{t(title)}</h2>
+      <h2><img src={BicycleWhiteLogo} /></h2>
       <li><NavLink to="/">{t('Company')}</NavLink></li>
       <li><NavLink to="/services">{t('Services')}</NavLink></li>
       <li><NavLink to="/industries">{t('Industries')}</NavLink></li>
@@ -303,14 +304,14 @@ const Footer = () => {
                 <img src={TW} alt="Twitter" />
                 <img src={IG} alt="Instagram" /> */}
               <NavLink to="https://www.linkedin.com/company/bicycle-dev/">    <img src={LN} alt="LinkedIn" /></NavLink>
-              <NavLink to=""><img src={WhatsApp} alt="Whatsapp"/></NavLink>
+              <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="Whatsapp"/></NavLink>
                 {/* <img src={YT} alt="YouTube" /> */}
               </div>
             </div>
             <div className="footerNav">
               {renderNavList('About')}
-              {renderNavList('Career')}
-              {renderNavList('Career')}
+              {/* {renderNavList('Career')}
+              {renderNavList('Career')} */}
             </div>
           </div>
           <div className="copyright">

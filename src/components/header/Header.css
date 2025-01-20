@@ -233,3 +233,40 @@ nav {
     }
   }
   
+
+  /* dropdown */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  position: relative; 
+  display: inline-block;
+}
+
+ul.dropdown {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: -50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  list-style: none;
+  padding-top: 10px;
+  border-radius:10px
+}
+
+li:hover > ul.dropdown {
+  display: block;  
+}
+
+ul.dropdown li {
+  padding: 10px;
+  width: 200px;
+}
+
+ul.dropdown li:hover {
+  background-color: #f0f0f0;
+}

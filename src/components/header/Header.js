@@ -10,6 +10,11 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navbarRef = useRef(null);
   const [isFixed, setIsFixed] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleMouseEnter = () => setDropdownOpen(true);
+  const handleMouseLeave = () => setDropdownOpen(false);
+
 
   const navRef = useRef(null);
   const { t, i18n } = useTranslation();
@@ -81,16 +86,33 @@ const Header = () => {
             <li onClick={() => setIsOpen(false)}>
               <NavLink to="/industries">{t("Industries")}</NavLink>
             </li>
-            <li onClick={() => setIsOpen(false)}>
+            {/* <li onClick={() => setIsOpen(false)}>
               <NavLink to="/partners">{t("Partners")}</NavLink>
-            </li>
+              
+            </li> */}
+            <li
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            onClick={() => setIsOpen(false)}
+          >
+            <NavLink to="/partners">{t("Partners")}</NavLink>
+
+            {/* Выпадающее меню с календарем */}
+            {isDropdownOpen && (
+              <ul className="dropdown">
+                <li>
+                  <NavLink to="/calendar">{t("Calendar for planning")}</NavLink>
+                </li>
+              </ul>
+            )}
+          </li>
             <li onClick={() => setIsOpen(false)}>
               <NavLink to="/careers">{t("Careers")}</NavLink>
             </li>
             {/* <li><NavLink to="/insights">Insights</NavLink></li> */}
-            <li onClick={() => setIsOpen(false)}>
+            {/* <li onClick={() => setIsOpen(false)}>
               <NavLink to="/calendar">{t("Calendar")}</NavLink>
-            </li>
+            </li> */}
             {/* <li onClick={() => setIsOpen(false)}>
               <NavLink to="/employees">{t("Employees")}</NavLink>
             </li> */}

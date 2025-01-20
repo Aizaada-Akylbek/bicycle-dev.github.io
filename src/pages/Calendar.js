@@ -12,7 +12,7 @@ const Calendar = () => {
   return (
     <div className="container">
       <div className="hero-calendar dark-blue">
-        <div className="circle l-circle-calendar">
+        {/* <div className="circle l-circle-calendar">
           <div className="circle-inner" />
         </div>
         <div className="circle m-circle-calendar">
@@ -37,13 +37,13 @@ const Calendar = () => {
         <div className="hero-calendar-btns">
           <EmployeesBtn />
           <CareerBtn />
-        </div>
+        </div> */}
         <div className="year-calendar">
           <div className="bg-medium bg-year-calendar" />
 
           <AppCalendar />
         </div>
-        <div className="calendar-office">
+        {/* <div className="calendar-office">
           <div className="circle xs-calendar-office1">
             <div className="circle-inner" />
           </div>
@@ -67,7 +67,7 @@ const Calendar = () => {
             Red-flag on globalize meat i'm wheel. Synergy.
           </p>
         </div>
-        <DevOperations />
+        <DevOperations /> */}
       </div>
     </div>
   );
