@@ -37,6 +37,11 @@
     top: 0;
     z-index: -1;
   }
+  .career-card-main-title{
+    display: flex;
+    gap: 5px;
+    align-items:center
+  }
   @media screen and (max-width: 786px) {
     .careers-cards {
       flex-direction: column;

@@ -6,12 +6,14 @@ import Vector1 from "../../assets/servicesLogos/Vector1.svg";
 import Vector2 from "../../assets/servicesLogos/Vector2.svg";
 import "./Expertise.css";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const Expertise = () => {
   const {t}=useTranslation()
   const expertiseData=[
     {
-      icon: Vector,
+      icon: 'fa-solid fa-watch-apple'  ,
       title: t("Digital Designing: Where Innovation Meets Imagination!"),
       description:
         t("Crafting visually appealing and user-friendly interfaces. Every interaction meticulously designed for seamless navigation and engagement.Web Design: Bringing your online presence to life with captivating and functional designs that reflect your brand identity.Mobile Design: Tailored mobile experiences for iOS and Android apps, ensuring beauty, usability, and satisfaction.Stand out in the digital landscape with our design expertise, leaving a lasting impression on your users."),
@@ -66,7 +68,9 @@ const Expertise = () => {
             style={{ width: `${expData.width}%` }}
             key={expData.icon}
           >
-            <img src={expData.icon} alt={expData.icon} />
+            {/* <img src={expData.icon} alt={expData.icon} /> */}
+            {/* <div >{expData.icon}</div> */}
+            <FontAwesomeIcon icon={expData.icon} style={{ color: "#11295a", fontSize: "54px" }}/>
             <div className="service-block-title dark-blue">{expData.title}</div>
             <p>
               {/* {expData.description.slice(0, 150)}... */}

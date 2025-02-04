@@ -42,7 +42,7 @@ const Services = () => {
       <div className="container">
         <Expertise />
       </div>
-      <Slider />
+      {/* <Slider /> */}
       <div className="container">
         <div className="it-outsourcing">
           <div className="bg-medium bg-outsource" />

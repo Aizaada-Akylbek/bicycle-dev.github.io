@@ -17,8 +17,9 @@
 }
 .benefit-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 15px;
 }
 .benefit-card {
     width: 292px;
