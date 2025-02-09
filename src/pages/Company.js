@@ -7,12 +7,14 @@ import PartnersFeedback from "../components/partnersFeedback/PartnersFeedback";
 import MakeBusiness from "../components/makeBusiness/MakeBusiness";
 import Faq from "../components/faq/Faq";
 import WorkingTogether from "../components/workingTogether/WorkingTogether";
+import WorkBenefit from "../components/workBenefit/WorkBenefit";
 
 const Company = () => {
   return (
     <div>
       <Hero />
       {/* <Slider /> */}
+      <WorkBenefit/>
       <Mission />
       <Team />
       {/* <PartnersFeedback /> */}
