@@ -5,8 +5,6 @@
 /.pnp
 .pnp.js
 
-!node_modules/.cache/gh-pages
-
 # testing
 /coverage
 
