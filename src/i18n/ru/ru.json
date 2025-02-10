@@ -197,7 +197,18 @@
     "By submitting your application, you consent to the storage of your CV in our database of candidates. If we have another vacancy that suits you, we may contact you":"Отправляя заявку, вы даете согласие на хранение вашего резюме в нашей базе данных кандидатов. Если у нас появится другая вакансия, которая вам подходит, мы можем связаться с вами.",
     "I want to work for BicycleDev":"Я хочу работать в BicycleDev", 
     "More":"Подробнее", 
-    "More": "подробнее"
+    "More": "подробнее",
+      "Benefits of cooperation with us":"Выгоды сотрудничества с нами",
+         "Up to 35% savings on the employee's total salary":"До 35% экономия на общей зарплате сотрудника",
+         "About 20% savings on Sozialabgaben Arbeitgeber":"Около 20% экономия на Sozialabgaben Arbeitgeber",
+         "Savings on administrative and operating costs":"Экономия на административных и операционных расходах",
+         "Savings on administrative and operating costs":"Экономия на административных и операционных расходах",
+         "Savings on administrative and operating costs":"Экономия на административных и операционных расходах", 
+         "Please fill out the required field":"Пожалуйста, заполните обязательное поле",
+         "Full name":"Полное имя", 
+         "Business email":"Рабочий email",
+         "Phone number":"Номер телефона ",
+         "How we can help you?": "Чем мы можем вам помочь?"
   
   
   }

@@ -20,6 +20,7 @@ footer {
     font-weight: 200;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 10px;
   }
   .copyright {
     font-size: 14px;
@@ -33,8 +34,15 @@ footer {
     display: inline-block;
     margin-right: 2%;
   }
-  .footerContact {
+  .input-bottom-line{
     border-bottom: 1px solid #eef8ff;
+    margin-top: 10px;
+
+  }
+  .footer-inp{
+    width: 50%;
+  }
+  .footerContact {
     width: 50%;
     margin-top: 5%;
     display: flex;
