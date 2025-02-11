@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://bicycle-dev.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aizaada-Akylbek/bicycle-dev.git"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.14.0",
