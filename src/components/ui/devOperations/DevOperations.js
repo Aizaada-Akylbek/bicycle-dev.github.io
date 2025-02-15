@@ -5,7 +5,9 @@ import { useTranslation } from "react-i18next";
 
 
 const DevOperations = () => {
+
   const {t}=useTranslation()
+  
   return (
     <div className="development">
       <h4 className="poppins">
