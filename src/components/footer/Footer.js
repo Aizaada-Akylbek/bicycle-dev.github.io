@@ -219,6 +219,17 @@ const Footer = () => {
     
     setFormValues({ user_name: "", user_email: "", message: "", user_phone: "" });
   };
+    const renderNavList = (title) => (
+    <ul className="footerNavList">
+      <h2><img src={BicycleWhiteLogo} /></h2>
+      <li><NavLink to="/">{t('Company')}</NavLink></li>
+      <li><NavLink to="/services">{t('Services')}</NavLink></li>
+      <li><NavLink to="/industries">{t('Industries')}</NavLink></li>
+      <li><NavLink to="/partners">{t('Partners')}</NavLink></li>
+      <li><NavLink to="/careers">{t('Careers')}</NavLink></li>
+      <li><NavLink to="/contacts">{t('Contacts')}</NavLink></li>
+    </ul>
+  );
 
   return (
     <footer>
@@ -284,6 +295,9 @@ const Footer = () => {
                 <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="Whatsapp" style={{ width: "40px" }} /></NavLink>
               </div>
             </div>
+            <div className="footerNav">
+               {renderNavList('About')}
+             </div>
           </div>
           <div className="copyright">Copyright © 2025. Bicycle Dev. All rights reserved.</div>
         </div>
