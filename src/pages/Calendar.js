@@ -12,32 +12,6 @@ const Calendar = () => {
   return (
     <div className="container">
       <div className="hero-calendar dark-blue">
-        {/* <div className="circle l-circle-calendar">
-          <div className="circle-inner" />
-        </div>
-        <div className="circle m-circle-calendar">
-          <div className="circle-inner" />
-        </div>
-        <div className="circle s-circle-calendar">
-          <div className="circle-inner" />
-        </div>
-
-        <div className="bg-long bg-calendar" />
-        <h2 className="main-title poppins">
-          Office ipsum you must <br /> be muted. Who's
-        </h2>
-        <p className="main-title-info">
-          {t(
-            "We help companies reach their potential through a combination of design and digital solutions."
-          )}
-        </p>
-        <NavLink>
-          <button className="main-btn calendar-btn">Label</button>
-        </NavLink>
-        <div className="hero-calendar-btns">
-          <EmployeesBtn />
-          <CareerBtn />
-        </div> */}
         <div className="year-calendar">
           <div className="bg-medium bg-year-calendar" />
 
