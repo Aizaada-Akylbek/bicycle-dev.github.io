@@ -24,16 +24,20 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Deploy to GitHub Pages
+    - name: Check for changes and deploy
       run: |
         git config --global user.email "akylbekova.aizaada@gmail.com"
         git config --global user.name "Aizaada-Akylbek"
-        git add .
-        git commit -m "Deploy to GitHub Pages"
-        git push origin master
-        git diff --exit-code || echo "No changes detected"
-        git diff --exit-code || echo "No changes detected, skipping deploy"
+        
+        # Проверяем, есть ли изменения, если есть, выполняем пуш
+        git diff --exit-code || (
+          echo "Changes detected, committing and pushing to master"
+          git add -A
+          git commit -m "Deploy to GitHub Pages"
+          git push origin master
+        )
 
-
+    - name: Deploy to GitHub Pages
+      run: npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.AIZAADA_TOKEN }}  # Используем твой токен
