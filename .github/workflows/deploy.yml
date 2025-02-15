@@ -32,6 +32,8 @@ jobs:
         git commit -m "Deploy to GitHub Pages"
         git push origin master
         git diff --exit-code || echo "No changes detected"
+        git diff --exit-code || echo "No changes detected, skipping deploy"
+
 
       env:
         GITHUB_TOKEN: ${{ secrets.AIZAADA_TOKEN }}  # Используем твой токен
