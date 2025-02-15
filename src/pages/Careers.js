@@ -24,7 +24,7 @@ const Careers = () => {
       </div>
       <CareersCards />
       <PositionCareers />
-      <DevOperations />
+      {/* <DevOperations /> */}
     </div>
   );
 };

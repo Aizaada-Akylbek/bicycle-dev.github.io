@@ -60,7 +60,7 @@ const Services = () => {
       <div className="container">
       <ItOutstaffing />
 
-      <DevOperations />
+      {/* <DevOperations /> */}
       </div>
     </div>
   );

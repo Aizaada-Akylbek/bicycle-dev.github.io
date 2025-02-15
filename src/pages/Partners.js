@@ -25,7 +25,7 @@ const Partners = () => {
       </div>
       <PartnersCards />
       {/* <Review /> */}
-      <DevOperations />
+      {/* <DevOperations /> */}
     </div>
   );
 };
