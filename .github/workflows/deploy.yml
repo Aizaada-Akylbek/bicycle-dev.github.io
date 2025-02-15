@@ -28,6 +28,9 @@ jobs:
       run: |
         git config --global user.email "akylbekova.aizaada@gmail.com"
         git config --global user.name "Aizaada-Akylbek"
+        git remote set-url origin https://x-access-token:${{ secrets.AIZAADA_TOKEN }}@github.com/${{ github.repository }}.git
+
+        
         
         # Проверяем, есть ли изменения, если есть, выполняем пуш
         git diff --exit-code || (
