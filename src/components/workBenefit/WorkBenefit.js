@@ -66,11 +66,11 @@ const WorkBenefit = () => {
         <div className='savings-item'>
        
         <h2 className='middle-blue'> <AccountBalanceWalletIcon sx={{ fontSize: 50 }}/></h2>
-            <h2>{t("Savings on administrative and operating costs")}</h2>
+            <h2>{t("Outsourcing of accounting and HR functions, including Capacity Development")}</h2>
         </div>
         <div className='savings-item'>
         <h2 className='middle-blue'><Diversity2Icon sx={{ fontSize: 50 }}/></h2>
-            <h2>{t("Savings on administrative and operating costs")}</h2>
+            <h2>{t("Internationalization of the team and your business")}</h2>
         </div>
         </div>
         </div>
