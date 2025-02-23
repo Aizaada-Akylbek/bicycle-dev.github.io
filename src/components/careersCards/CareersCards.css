@@ -40,7 +40,10 @@
   .career-card-main-title{
     display: flex;
     gap: 5px;
-    align-items:center
+    align-items:center;
+  }
+  .career-card-main-title h3 {
+    display: flex;
   }
   @media screen and (max-width: 786px) {
     .careers-cards {

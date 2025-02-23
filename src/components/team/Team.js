@@ -15,7 +15,7 @@ const Team = () => {
       img: Askat,
       name: "Askat Baktiyar",
       position: "Business Development Director",
-      lnkdn: "https://www.linkedin.com/feed/",
+      lnkdn: "https://www.linkedin.com/in/askat-baktiyar/",
     },
     {
       img: Farkhat,
@@ -27,13 +27,13 @@ const Team = () => {
       img: Adilet,
       name: "Adilet Ryskulov",
       position: "Backend developer",
-      lnkdn: "https://www.linkedin.com/feed/",
+      lnkdn: "https://www.linkedin.com/in/adilet-ryskulov-b4a11920a/",
     },
     {
       img: Aizaada,
       name: "Aizaada Akylbekova",
       position: "Frontend Developer",
-      lnkdn: "https://www.linkedin.com",
+      lnkdn: "https://www.linkedin.com/in/aizaada-akylbekova/",
     },
   ];
   const { t } = useTranslation();

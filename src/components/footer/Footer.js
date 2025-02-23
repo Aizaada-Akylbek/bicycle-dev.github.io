@@ -1,175 +1,18 @@
-// import React, { useState, useRef } from "react";
-// import { NavLink } from "react-router-dom";
-// import "./Footer.css";
-// import LN from "../../assets/logoLinks/LinkedIn.svg";
-// import WhatsApp from '../../assets/logoLinks/Whatsapp.svg'
-// import BicycleWhiteLogo from '../../assets/logos/WhiteMainLogo.png'
-// import { useTranslation } from "react-i18next";
-// import emailjs from "emailjs-com"; // Make sure to install emailjs-com
-
-// const Modal = ({ isOpen, message }) => {
-//   if (!isOpen) {
-//     return null;
-//   }
-
-//   return <div className="modal-overlay">{message}</div>;
-// };
-
-// const Footer = () => {
-//   const [isModalOpen, setIsModalOpen] = useState(false);
-//   const [inputValue, setInputValue] = useState("");
-//   const [error, setError] = useState('');
-//   const [formValues, setFormValues] = useState({
-//     user_name: "",
-//     user_phone: "",
-//     user_email: "",
-//     message: "",
-//   });
-//   const form = useRef();
-//   const { t } = useTranslation();
-
-//   const handleButtonClick = () => {
-//     if (inputValue.trim() === '') {
-//       setError(t('Please fill out this field'));
-//       return;
-//     }
-//     setError('');
-//     setIsModalOpen(true);
-//     setTimeout(() => {
-//       setIsModalOpen(false);
-//     }, 3000); // Close modal after 3 seconds
-//   };
-
-//   const handleInputChange = (e) => {
-//     setInputValue(e.target.value);
-//     if (error) {
-//       setError('');
-//     }
-//   };
-
-//   const validate = () => {
-//     // Add your validation logic here
-//     return {};
-//   };
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-//     const errors = validate();
-//     if (Object.keys(errors).length > 0) {
-//       setError(t('Please fix the errors in the form'));
-//       return;
-//     }
-
-//     emailjs.sendForm('service_nqcwraa', 'template_5f6kff7', form.current, 'kaXtgRdirwWqDEySs')
-//       .then(() => {
-//         console.log('SUCCESS!');
-//         setIsModalOpen(true);
-//         setTimeout(() => {
-//           setIsModalOpen(false);
-//         }, 3000);
-//       }, (error) => {
-//         console.log('FAILED...', error.text);
-//       });
-
-//     form.current.reset();
-//     setFormValues({ user_name: "", user_phone: "", user_email: "", message: "" });
-//   };
-
-//   const renderNavList = (title) => (
-//     <ul className="footerNavList">
-//       <h2><img src={BicycleWhiteLogo} /></h2>
-//       <li><NavLink to="/">{t('Company')}</NavLink></li>
-//       <li><NavLink to="/services">{t('Services')}</NavLink></li>
-//       <li><NavLink to="/industries">{t('Industries')}</NavLink></li>
-//       <li><NavLink to="/partners">{t('Partners')}</NavLink></li>
-//       <li><NavLink to="/careers">{t('Careers')}</NavLink></li>
-//       <li><NavLink to="/contacts">{t('Contacts')}</NavLink></li>
-//     </ul>
-//   );
-
-//   return (
-//     <footer>
-//       <div className="container">
-//         <div>
-//           <div className="footerBlocks">
-//             <div className="footerLogos">
-//               <div className="titleWork">
-//                 {t('Interested in')} <br />
-//                 {t('working together?')}
-//               </div>
-//               <div className="input-bottom-line footer-inp">
-//               <input
-//                   type="text"
-//                   placeholder={t("Full name")}
-//                   className={`footerInput ${error ? 'invalid' : ''} input-bottom-line`}
-//                   value={inputValue}
-//                   onChange={handleInputChange}
-//                 />
-//               </div>
-//               <div className="input-bottom-line footer-inp">
-//               <input
-//                   type="text"
-//                   placeholder={t("Business email")}
-//                   className={`footerInput ${error ? 'invalid' : ''} input-bottom-line`}
-//                   value={inputValue}
-//                   onChange={handleInputChange}
-//                 />
-//               </div>
-//               <div className="input-bottom-line footer-inp">
-//               <input
-//                   type="text"
-//                   placeholder={t("Phone number (optional)")}
-//                   className={`footerInput ${error ? 'invalid' : ''} input-bottom-line`}
-//                   value={inputValue}
-//                   onChange={handleInputChange}
-//                 />
-//               </div>
-//               <div className="footerContact input-bottom-line">
-//                 <input
-//                   type="text"
-//                   placeholder={t("How we can help you?")}
-//                   className={`footerInput ${error ? 'invalid' : ''} input-bottom-line`}
-//                   value={inputValue}
-//                   onChange={handleInputChange}
-//                 />
-             
-//                 <Modal isOpen={isModalOpen} message={t('Your message has been sent')} />
-//                       <button onClick={handleButtonClick} className="footerBtn">
-//                   {/* <i className="bi bi-arrow-right"></i> */}
-//                   Submit
-//                 </button>
-//               </div>
-        
-//               {error && <div className="error">{error}</div>}
-//               <div className="logoLinks">
-//               <NavLink to="https://www.linkedin.com/company/bicycle-dev/">    <img src={LN} alt="LinkedIn" /></NavLink>
-//               <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></NavLink>
-//               </div>
-//             </div>
-//             <div className="footerNav">
-//               {renderNavList('About')}
-//             </div>
-//           </div>
-//           <div className="copyright">
-//             Copyright © 2025. Bicycle Dev. All rights reserved.
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
-
 import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
 import LN from "../../assets/logoLinks/LinkedIn.svg";
-import WhatsApp from '../../assets/logoLinks/Whatsapp.svg';
+// import WhatsApp from '../../assets/logoLinks/Whatsapp.svg';
 import BicycleWhiteLogo from '../../assets/logos/WhiteMainLogo.png';
 import { useTranslation } from "react-i18next";
 import emailjs from "emailjs-com";
+import WhatsApp from "../../assets/logoLinks/Whatsapp.svg";
+import Phone from "../../assets/logos/Phone.svg";
+import Facebook from "../../assets/contactUs/Facebook.svg";
+import Twitter from "../../assets/contactUs/Twitter.svg";
+import LinkedIn from "../../assets/contactUs/LinkedIn.svg";
+import Instagram from "../../assets/contactUs/Instagram.svg";
+import YouTube from "../../assets/contactUs/YouTube.svg";
 
 const Modal = ({ isOpen, message }) => {
   if (!isOpen) return null;
@@ -236,7 +79,7 @@ const Footer = () => {
       <div className="container">
         <div>
           <div className="footerBlocks">
-            <div className="footerLogos">
+            {/* <div className="footerLogos">
               <div className="titleWork">
                 {t('Get in touch')}
               </div>
@@ -284,9 +127,6 @@ const Footer = () => {
                     value={formValues.message}
                     onChange={handleInputChange}
                   />
-                  {/* <NavLink>
-                  <button type="submit" className="footerBtn">Submit</button>
-                  </NavLink> */}
                   <NavLink
                   type="submit" className="footerBtn">Submit</NavLink>
                 </div>
@@ -298,12 +138,71 @@ const Footer = () => {
                 <NavLink to="https://www.linkedin.com/company/bicycle-dev/"><img src={LN} alt="LinkedIn" /></NavLink>
                 <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="Whatsapp" style={{ width: "40px" }} /></NavLink>
               </div>
+            </div> */}
+            <div className="contact-address">
+          <h3 className="poppins main-text-h3 ">
+            {t("Interested in")}{" "}
+            <span className="middle-blue">{t("working together?")}</span>
+          </h3>
+
+          <div className="contact-location">
+            <h4>{t("Our offices")}:</h4>
+            <div>
+              {t("Leipzig")}, {t("Germany")}
             </div>
+            <div>
+              {t("Bishkek")}, {t("Kyrgyz Republic")}
+            </div>
+          </div>
+
+          <div className="contact-location">
+            <h4>{t("Contact us")}:</h4>
+            <div>
+              <a href="mailto:askat.baktiyar@bicycle-dev.com" > askat.baktiyar@bicycle-dev.com
+              </a>
+            </div>
+            <div className="contact-us">
+              <div className="contact-tel">
+               <NavLink> <img src={Phone} alt="" /></NavLink>
+
+                <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="" /></NavLink>
+
+                <div>+49 177 470 54 40</div>
+              </div>
+            </div>
+            <div className="contact-us">
+              <div className="contact-tel">
+                {" "}
+                <img src={Phone} alt="" /> <img src={WhatsApp} alt="" />
+                <div>+49 177 557 11 32</div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="contact-socials">
+            <a className="contact-logo contact-logo-big" href="#">
+              <img src={Facebook} alt="" />
+            </a>
+            <a className="contact-logo-big contact-logo" href="#">
+              <img src={Twitter} alt="" />
+            </a>
+            <a className="contact-logo-big contact-logo" href="#">
+              <img src={Instagram} alt="" />
+            </a>
+            <a className="contact-logo contact-logo-big" href="#">
+              <img src={LinkedIn} alt="" />
+            </a>
+            <a className="contact-logo contact-logo-big" href="#">
+              <img src={YouTube} alt="" />
+            </a>
+          </div> */}
+   
+        </div>
             <div className="footerNav">
                {renderNavList('About')}
              </div>
           </div>
-          <div className="copyright">Copyright © 2025. Bicycle Dev. All rights reserved.</div>
+          <div className="copyright">© Bicycle Dev-2025. All rights reserved.</div>
         </div>
       </div>
     </footer>
