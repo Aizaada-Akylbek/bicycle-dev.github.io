@@ -73,7 +73,7 @@ const WorkBenefit = () => {
         </div>
         <div className='savings-item medium'>
             <h2>
-            <div className='savings-title'>{t("About 20% savings on Sozialabgaben Arbeitgeber")}</div>
+            <div className='savings-title'>{t("Savings on Employer Social Contributions")}</div>
 
             <PieChart
                     colors={['#2a91ff', 'blue', 'green']} // Use palette

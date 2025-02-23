@@ -47,11 +47,11 @@ const Month = ({ year, month, holidays }) => {
           ...Array.from({ length: daysInMonth }, (_, i) => i + 1).map(
             (day, index) => {
               const currentDate = new Date(year, month, day);
-              const isHoliday = holidays.some(
-                (holiday) =>
-                  currentDate.toDateString() ===
-                  new Date(holiday).toDateString()
-              );
+              const isHoliday = holidays.some((holiday) => {
+                const holidayDate = new Date(holiday + "T00:00:00");
+                return currentDate.toDateString() === holidayDate.toDateString();
+              });
+              
 
               return (
                 <div
