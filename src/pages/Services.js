@@ -33,9 +33,9 @@ const Services = () => {
             <div className="main-title-info services-info">
               {t('Tailored IT Solutions with Outsourcing')} & <br /> {t('Outstaffing Excellence')}!
             </div>
-            <button className="main-btn">
-              <NavLink to="/contacts">{t('Contacts')}</NavLink>
-            </button>
+            <NavLink to="/contacts" className="main-btn">
+              {t('Contacts')}
+            </NavLink>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ const Services = () => {
            {t("Combining your ideas with our technical expertise, we develop a customized (unique) software product or implement creative ICT project for advancement and internationalization of your business.Tailoring our approach to your needs and expectations, we can also take charge of day-to-day IT functions by constructing transparent and secure technical operations and processes for smooth functioning of your company.We offer a wide range of ICT services including software (web and App) development, IT infrastructure management, database and data center operations, technical support (network maintenance and technical security support) etc.")}
           </p>
           <button className="main-btn ">
-            <NavLink to="/contacts">{t("Contact us")}</NavLink>
+            <NavLink to="/contacts">{t("Let's discuss your project")}</NavLink>
           </button>
         </div>
       </div>

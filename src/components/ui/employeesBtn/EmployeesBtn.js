@@ -7,8 +7,7 @@ import { useTranslation } from "react-i18next";
 const EmployeesBtn = () => {
   const { t } = useTranslation();
   return (
-    <div className="info-block">
-       <NavLink to="https://wa.me/00491775571132">
+    <NavLink to="/contacts" className="info-block">     
       <div className="info-title">
         <h4>{t("Contact us")}</h4>
         {/* <NavLink to="https://wa.me/00491775571132"> */}
@@ -19,8 +18,8 @@ const EmployeesBtn = () => {
         {t("More")}
         {/* <button>{t("More")}</button> */}
       {/* </NavLink> */}
-      </NavLink>
-    </div>
+    </NavLink>
+
   );
 };
 

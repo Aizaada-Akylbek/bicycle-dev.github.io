@@ -11,22 +11,13 @@ import { useTranslation } from "react-i18next";
 const CareerBtn = () => {
   const { t } = useTranslation();
   return (
-    <div className="info-block">
-              <NavLink to="/careers">
-
-      <div className="info-title">
-        <h4>{t("Reviews")}</h4>
-        {/* <NavLink to="/careers"> */}
-          <img src={RightLine} alt="employees" />
-        {/* </NavLink> */}
-      </div>
-      {/* <NavLink to="/careers"> */}
-        {t("More")}
-        {/* <button>{t("More")}</button> */}
-      {/* </NavLink> */}
+      <NavLink to="/careers" className="info-block">
+          <div className="info-title">
+            <h4>{t("Customer Reviews")}</h4>
+              <img src={RightLine} alt="employees" />
+          </div>
+            {t("More")}
       </NavLink>
-
-    </div>
   );
 };
 

@@ -52,8 +52,8 @@ const Team = () => {
       </div>
       <div className="cards-team">
         {teamData.map((el, index) => (
-          <div className="card-team" key={index}>
-            <div className="image-container" key={el.img}>
+          // <div className="card-team" key={index}>
+            <div className="image-container card-team" key={el.img}>
               <img src={el.img} alt="user" className="img-team" />
               <div className="image-text">
                 <h6>{el.position}</h6>
@@ -63,7 +63,7 @@ const Team = () => {
                 </NavLink>
               </div>
             </div>
-          </div>
+          // </div>
         ))}
       </div>
     </div>

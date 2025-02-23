@@ -13,7 +13,7 @@ const Faq = () => {
     },
     {
       text: t("2. What types of IT services do you offer through outstaffing and outsourcing?"),
-      desc: t("We offer a comprehensive range of IT services, including software development, web development, mobile app development, QA and testing, UI/UX design, IT infrastructure management, and more. See:"),linkTitle:t('Industries'), link:''
+      desc: t("We offer a comprehensive range of IT services, including software development, web development, mobile app development, QA and testing, UI/UX design, IT infrastructure management, and more. See:"),linkTitle:t('Industries'), link:'/industries'
     },
     {
       text: t("3. How does your outstaffing service work?"),
@@ -87,7 +87,10 @@ const Faq = () => {
                      <NavLink className='dark-blue' >
               <div className="faq-question" onClick={() => toggleAnswer(index)}>
                 <h4>{el.text}</h4>
-                <button onClick={() => toggleAnswer(index)}>
+                <button onClick={(event) => {
+                  event.stopPropagation();
+                  toggleAnswer(index)
+                }}>
                   {openIndex === index ? (
                     <i className="bi bi-dash-circle"></i>
                   ) : (

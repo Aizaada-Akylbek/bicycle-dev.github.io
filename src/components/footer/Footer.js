@@ -238,7 +238,7 @@ const Footer = () => {
           <div className="footerBlocks">
             <div className="footerLogos">
               <div className="titleWork">
-                {t('Interested in')} <br /> {t('working together?')}
+                {t('Get in touch')}
               </div>
               <form ref={form} onSubmit={sendEmail}>
                 <div className="input-bottom-line footer-inp">
@@ -284,7 +284,11 @@ const Footer = () => {
                     value={formValues.message}
                     onChange={handleInputChange}
                   />
+                  {/* <NavLink>
                   <button type="submit" className="footerBtn">Submit</button>
+                  </NavLink> */}
+                  <NavLink
+                  type="submit" className="footerBtn">Submit</NavLink>
                 </div>
                 {errors.message && <div className="error">{errors.message}</div>}
 

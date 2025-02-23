@@ -13,6 +13,9 @@ body {
     /* border:2px solid green */
 }
 .container {
-    max-width: 84%;
+    max-width: 87%;
     margin: 0 auto;
+  }
+  button {
+    cursor:pointer
   }

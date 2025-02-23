@@ -17,10 +17,8 @@ const Mission = () => {
           </span>{" "}
           {t('through digital and technological transformation.')}
         </p>
-        <NavLink to="/services">
-        <button className="main-btn">{t('Our services')}</button>
-
-
+        <NavLink to="/services" className="main-btn">
+           {t('Our services')}
         </NavLink>
       </div>
     </div>

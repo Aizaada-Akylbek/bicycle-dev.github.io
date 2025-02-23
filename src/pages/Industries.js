@@ -71,7 +71,7 @@ const Industries = () => {
           <div className="bg-medium bg-industries-cards" />
           {industriesData.map((el, index) => (
             <div className="industries-card">
-              <h2 className="poppins middle-blue">{el.number}</h2>
+              <h2 className="poppins dark-blue">{el.number}</h2>
               <h4 className="dark-blue">{el.title}</h4>
               <p>
                  {/* {expData.description.slice(0, 150)}... */}
