@@ -51,32 +51,29 @@ const WorkBenefit = () => {
             </span>
         </div>
         </div>
-        <div className='savings-main-block'>
+        <div className='savings-main-block savings-card'>
         <div className='savings-item medium'>
             <h2>
-            <div className='savings-title'>{t("Savings on Salary")}</div>
-
-            <PieChart
-                    colors={['#2a91ff', 'blue', 'green']} // Use palette
-                    series={[
-                        {
-                        data: [
-                            { value: 3.5, color: '#2a91ff' }, // Use color property
-                            {value:6.5, color:'rgb(234, 232, 232)'}
-                        ],
-                        },
-                    ]}Ï
-                    width={400}
-                    height={200}
-                    />
+            <div className='savings-title'>{t("Savings on Salary")} <br/>35% {t("saved")}</div>
             </h2>
+                <PieChart
+                        series={[
+                            {
+                            data: [
+                                { value: 3.5, color: '#2a91ff' }, // Use color property
+                                {value:6.5, color:'rgb(234, 232, 232)'}
+                            ],
+                            },
+                        ]}Ï
+                        width={400}
+                        height={200}
+                        />            
         </div>
         <div className='savings-item medium'>
             <h2>
-            <div className='savings-title'>{t("Savings on Employer Social Contributions")}</div>
+            <div className='savings-title'>{t("Savings on Employer Social Contributions")} <br/>20% {t("saved")}</div>
 
             <PieChart
-                    colors={['#2a91ff', 'blue', 'green']} // Use palette
                     series={[
                         {
                         data: [

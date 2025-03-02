@@ -2,26 +2,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 56px;
+    /* margin: 0 0 56px; */
     position: relative;
+    /* background-color:lightblue */
 }
 
 
 .partners-card {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    overflow: hidden;
+    /* justify-content: end; */
+    /* overflow: hidden; */
     border-radius:20px;
-    margin-top: 64px;
+    margin-top: 44px;
 
 }
 .partners-card img {
     width: 100%;
-    max-height: 37vh;
-    height: 370px;
+    height: 330px;
+    /* height: 370px; */
     object-fit: contain;
     object-position: center ;
+    /* background-color: red; */
 }
 
 .partners-card h4 {
@@ -35,7 +37,7 @@
     line-height: 27px;
 }
 .partners-card a {
-    margin: 24px 0 64px;
+    margin: 24px 0 34px;
     display: inline-block;
 }
 .bg-partners {

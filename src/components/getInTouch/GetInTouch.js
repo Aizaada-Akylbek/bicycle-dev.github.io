@@ -59,31 +59,31 @@ const GetInTouch = () => {
       {t('Get in touch')}
     </div>
     <form ref={form} onSubmit={sendEmail} className="formGetInTouch">
-      <div className="input-bottom-line footer-inp">
+      <div className="input-bottom-line">
         <input
           type="text"
           name="user_name"
           placeholder={t("Full name")}
-          className={`footerInput ${errors.user_name ? 'invalid' : ''}`}
+          className={`footerInput input-bottom-line ${errors.user_name ? 'invalid' : ''}`}
           value={formValues.user_name}
           onChange={handleInputChange}
         />
       </div>
       {errors.user_name && <div className="error">{errors.user_name}</div>}
 
-      <div className="input-bottom-line footer-inp">
+      <div className="input-bottom-line">
         <input
           type="email"
           name="user_email"
           placeholder={t("Business email")}
-          className={`footerInput ${errors.user_email ? 'invalid' : ''}`}
+          className={`footerInput input-bottom-line ${errors.user_email ? 'invalid' : ''}`}
           value={formValues.user_email}
           onChange={handleInputChange}
         />
       </div>
       {errors.user_email && <div className="error">{errors.user_email}</div>}
 
-      <div className="input-bottom-line footer-inp">
+      <div className="input-bottom-line">
         <input
           type="text"
           name="user_phone"

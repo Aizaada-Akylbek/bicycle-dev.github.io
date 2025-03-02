@@ -202,7 +202,7 @@ const Footer = () => {
                {renderNavList('About')}
              </div>
           </div>
-          <div className="copyright">© Bicycle Dev-2025. All rights reserved.</div>
+          <div className="copyright">© Bicycle Dev - 2025. All rights reserved.</div>
         </div>
       </div>
     </footer>
