@@ -13,11 +13,11 @@ const Company = () => {
   return (
     <div>
       <Hero />
-      {/* <Slider /> */}
+      <Slider />
       <WorkBenefit/>
       <Mission />
       <Team />
-      {/* <PartnersFeedback /> */}
+      <PartnersFeedback />
       <MakeBusiness />
       <Faq />
       <WorkingTogether />

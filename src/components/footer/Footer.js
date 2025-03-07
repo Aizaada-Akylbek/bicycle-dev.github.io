@@ -165,7 +165,7 @@ const Footer = () => {
               <div className="contact-tel">
                <NavLink> <img src={Phone} alt="" /></NavLink>
 
-                <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="" /></NavLink>
+                <NavLink to="https://wa.me/00491774705440"><img src={WhatsApp} alt="" /></NavLink>
 
                 <div>+49 177 470 54 40</div>
               </div>
@@ -173,7 +173,9 @@ const Footer = () => {
             <div className="contact-us">
               <div className="contact-tel">
                 {" "}
-                <img src={Phone} alt="" /> <img src={WhatsApp} alt="" />
+               <NavLink> <img src={Phone} alt="" /> </NavLink>
+                <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="" /></NavLink>
+
                 <div>+49 177 557 11 32</div>
               </div>
             </div>

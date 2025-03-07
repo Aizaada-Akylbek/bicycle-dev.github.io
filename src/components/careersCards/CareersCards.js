@@ -49,7 +49,7 @@ const CareersCards = () => {
         <h4>{t("Team workshops and events")}</h4>
         </div>
         <hr/>
-        <p>
+        <p className="career-card-description">
         {t("Share experiences, deepen your knowledge and create new connections in a friendly and supportive environment. Opportunity for learning, growth and development for you!")}
         </p>
       </div>
@@ -62,7 +62,7 @@ const CareersCards = () => {
           <h4>{el.title}</h4>
           </div>
           <hr/>
-          <p>{el.descr}</p>
+          <p className="career-card-description">{el.descr}</p>
         </div>
       ))}
     </div>

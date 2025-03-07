@@ -78,13 +78,13 @@ const Header = () => {
 
           <ul className={`nav-links ${isOpen ? "open" : ""}`}>
             <li onClick={() => setIsOpen(false)}>
-              <NavLink to="/">{t("Company")}</NavLink>
+              <NavLink to="/"  end className={({ isActive }) => isActive ? " active-link" : ""}>{t("Company")}</NavLink>
             </li>
             <li onClick={() => setIsOpen(false)}>
-              <NavLink to="/services">{t("Services")}</NavLink>
+              <NavLink to="/services" end className={({ isActive }) => isActive ? " active-link" : ""}>{t("Services")}</NavLink>
             </li>
             <li onClick={() => setIsOpen(false)}>
-              <NavLink to="/industries">{t("Industries")}</NavLink>
+              <NavLink to="/industries" end className={({ isActive }) => isActive ? " active-link" : ""}>{t("Industries")}</NavLink>
             </li>
             {/* <li onClick={() => setIsOpen(false)}>
               <NavLink to="/partners">{t("Partners")}</NavLink>
@@ -95,19 +95,19 @@ const Header = () => {
             onMouseLeave={handleMouseLeave}
             onClick={() => setIsOpen(false)}
           >
-            <NavLink to="/partners">{t("Partners")}</NavLink>
+            <NavLink to="/partners"  end className={({ isActive }) => isActive ? " active-link" : ""}>{t("Partners")}</NavLink>
 
             {/* Выпадающее меню с календарем */}
             {isDropdownOpen && (
               <ul className="dropdown">
                 <li>
-                  <NavLink to="/calendar">{t("Calendar for planning")}</NavLink>
+                  <NavLink to="/calendar" end className={({ isActive }) => isActive ? " active-link" : ""}>{t("Calendar for planning")}</NavLink>
                 </li>
               </ul>
             )}
           </li>
             <li onClick={() => setIsOpen(false)}>
-              <NavLink to="/careers">{t("Careers")}</NavLink>
+              <NavLink to="/careers" end className={({ isActive }) => isActive ? " active-link" : ""}>{t("Careers")}</NavLink>
             </li>
             {/* <li><NavLink to="/insights">Insights</NavLink></li> */}
             {/* <li onClick={() => setIsOpen(false)}>
@@ -117,7 +117,7 @@ const Header = () => {
               <NavLink to="/employees">{t("Employees")}</NavLink>
             </li> */}
             <li onClick={() => setIsOpen(false)}>
-              <NavLink to="/contacts">{t("Contacts")}</NavLink>
+              <NavLink to="/contacts" end className={({ isActive }) => isActive ? " active-link" : ""}>{t("Contacts")}</NavLink>
             </li>
             <li>
               <TranslateBtn />

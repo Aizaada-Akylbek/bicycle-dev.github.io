@@ -19,16 +19,19 @@ nav {
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .nav-links a {
     color: rgba(17, 41, 90, 1);
     text-decoration: none;
   }
-  
+
   .nav-links a:hover {
     color: #2a91ff;
   }
-  
+  .active-link{
+    color:#2a91ff !important
+  }
+
   .nav-links {
     display: flex;
     list-style: none;
