@@ -10,33 +10,33 @@ import "./Team.css";
 import { useTranslation } from "react-i18next";
 
 const Team = () => {
+  const {t}=useTranslation()
   const teamData = [
     {
       img: Askat,
-      name: "Askat Baktiyar",
-      position: "Business Development Director",
+      name: t("Askat Baktiyar"),
+      position: t("Business Development Director"),
       lnkdn: "https://www.linkedin.com/in/askat-baktiyar/",
     },
     {
       img: Farkhat,
-      name: "Farkhat Baktiyar",
-      position: "Business Development Manager",
+      name: t("Farkhat Baktiyar"),
+      position: t("Business Development Manager"),
       lnkdn: "https://www.linkedin.com/in/farkhat-baktiyar-8626791a8/",
     },
     {
       img: Adilet,
-      name: "Adilet Ryskulov",
-      position: "Backend developer",
+      name: t("Adilet Ryskulov"),
+      position: t("Backend Developer"),
       lnkdn: "https://www.linkedin.com/in/adilet-ryskulov-b4a11920a/",
     },
     {
       img: Aizaada,
-      name: "Aizaada Akylbekova",
-      position: "Frontend Developer",
+      name: t("Aizaada Akylbekova"),
+      position: t("Frontend Developer"),
       lnkdn: "https://www.linkedin.com/in/aizaada-akylbekova/",
     },
   ];
-  const { t } = useTranslation();
   return (
     <div className="team container">
       <div className="team-block">
