@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../components/hero/Hero";
-import Slider from "../components/slider/Slider";
+import Slider2 from "../components/slider2/Slider2";
 import Mission from "../components/mission/Mission";
 import Team from "../components/team/Team";
 import PartnersFeedback from "../components/partnersFeedback/PartnersFeedback";
@@ -13,7 +13,8 @@ const Company = () => {
   return (
     <div>
       <Hero />
-      <Slider />
+      {/* <Slider /> */}
+      <Slider2/>
       <WorkBenefit/>
       <Mission />
       <Team />
