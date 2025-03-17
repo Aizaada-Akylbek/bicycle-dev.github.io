@@ -31,8 +31,8 @@ const PartnersFeedback = () => {
       text:
        t( "Bicycle Dev is an active resident of the High Technology Park of the Kyrgyz Republic and is successfully expanding IT exports to Europe. Thanks to its professional team and high work standards, the company demonstrates steady growth, creates new job opportunities, and contributes to the development of the country's IT industry."),
         text2:t("We are proud that Bicycle Dev represents Kyrgyzstan in the international market as a reliable technology partner, affirming the high level of domestic IT specialists."),
-      name: '',
-      position: t('Director, HTP KR'),
+      name: 'Chubak Temirov',
+      position: t('Deputy Director, HTP KR'),
       img:avatarkamasys,
       logo:HTP
     },

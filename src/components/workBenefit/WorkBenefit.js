@@ -51,8 +51,8 @@ const WorkBenefit = () => {
             </span>
         </div>
         </div>
-        <div className='savings-main-block savings-card'>
-        <div className='savings-item medium'>
+        <div className='savings-main-block savings-card-2'>
+        <div className='savings-item-long medium'>
             <h2>
             <div className='savings-title'>{t("Savings on Salary")} <br/>35% {t("saved")}</div>
             </h2>
@@ -69,7 +69,7 @@ const WorkBenefit = () => {
                         height={200}
                         />            
         </div>
-        <div className='savings-item medium'>
+        <div className='savings-item-long medium'>
             <h2>
             <div className='savings-title'>{t("Savings on Employer Social Contributions")} <br/>20% {t("saved")}</div>
 

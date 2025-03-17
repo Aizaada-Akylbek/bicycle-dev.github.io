@@ -18,6 +18,14 @@
     right: 15%;
     padding: 10%;
   }
+  @media screen and (max-width:1000px) {
+    .hero-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    
+  }
   @media screen and (max-width: 680px) {
     .hero h1 {
       width: 100%;

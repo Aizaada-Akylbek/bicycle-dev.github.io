@@ -155,11 +155,20 @@
     max-width: 100% !important;
     background-color:green
   } */
+   @media screen and (max-width:1000px) {
+    .footerContact{
+      width: 100%;
+    }
+    .footerLogos{
+      width: 100%;
+    }
+    
+   }
   @media screen and (max-width: 770px) {
-    .footerBlocks {
+    /* .footerBlocks {
       flex-direction: column;
       align-items: center;
-    }
+    } */
     .footerContact {
       width: 100%;
       margin: 40px 0 64px;
@@ -169,6 +178,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .formGetInTouch {
+      width: 100%;
     }
     /* .footerNav {
       flex-direction: column;

@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color:aqua
   }
   .savings-main-block{
     display: flex;
@@ -55,6 +56,23 @@
 }
 .savings-title-bold{
   font-weight: bold;
+}
+@media screen and (max-width:843px) {
+.savings-grid{
+  flex-direction: column;
+  align-items:center;
+}
+.savings-card{
+  width: 60%;
+}
+.savings-main-block{
+  background-color:yellow
+}
+.savings-item-long {
+  background-color:blue;
+  width: 80%;
+}
+  
 }
 
 
