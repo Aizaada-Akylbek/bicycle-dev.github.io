@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 //img
-import samsung from "../../assets/companyLogos/samsung.png";
-import google from "../../assets/companyLogos/google.svg";
-import lg from "../../assets/companyLogos/lg.svg";
-import microsoft from "../../assets/companyLogos/microsoft.svg";
-import slack from "../../assets/companyLogos/slack.svg";
-import sony from "../../assets/companyLogos/sony.png";
+// import samsung from "../../assets/companyLogos/samsung.png";
+// import google from "../../assets/companyLogos/google.svg";
+// import lg from "../../assets/companyLogos/lg.svg";
+// import microsoft from "../../assets/companyLogos/microsoft.svg";
+// import slack from "../../assets/companyLogos/slack.svg";
+// import sony from "../../assets/companyLogos/sony.png";
 import Marquee from "react-fast-marquee";
+// import Kama from '/public/partners/kamasys_logo.jpg'
 import Kamasys from '../../assets/partners/kamasys_logo.jpg'
 import GmbH from '../../assets/partners/mk_logic_rgb_338_white.png'
 import Osma from '../../assets/partners/logo.a80f457e.svg'
@@ -16,7 +17,8 @@ import './SliderNew.css'
 
 const SliderNew = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const slides = [Kamasys, GmbH, Osma, HTP, Grand];
+    const slides=[Kamasys, GmbH, Osma, HTP, Grand]
+    // const slides = ['/public/partners/kamasys_logo.jpg', '/public/partners/htpkr.png','/public/partners/logo_grand.png', '/public/partners/mk_logic.png', '/public/partners/OSMA.svg'];
     const slideCount = slides.length;
   
     useEffect(() => {
