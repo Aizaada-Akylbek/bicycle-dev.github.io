@@ -51,7 +51,7 @@ const WorkBenefit = () => {
             </span>
         </div>
         </div>
-        <div className='savings-main-block savings-card-2'>
+        <div className='savings-main-block savings-card'>
         <div className='savings-item-long medium'>
             <h2>
             <div className='savings-title'>{t("Savings on Salary")} <br/>35% {t("saved")}</div>

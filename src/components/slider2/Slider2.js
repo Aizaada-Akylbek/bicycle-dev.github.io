@@ -16,7 +16,7 @@ import Grand from "../../assets/partners/logo_grand.png"
 //css
 import "./Slider2.css";
 
-const Slider = () => {
+const Slider2 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [Kamasys, GmbH, Osma, HTP, Grand];
   const slideCount = slides.length;
@@ -42,4 +42,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default Slider2;
