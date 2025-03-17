@@ -18,7 +18,7 @@
   width: 200px;
 }
 
-.slide img {
+.slideNew img {
   max-width: 80%;
   width: 245.96px;
   height: 52.84px;
@@ -26,7 +26,7 @@
 }
 
 @media screen and (max-width: 385px) {
-  .slide img {
+  .slideNew img {
       width: 145.96px;
       height: 32.84px;
   }
