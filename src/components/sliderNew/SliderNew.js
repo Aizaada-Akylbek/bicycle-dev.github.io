@@ -1,45 +1,36 @@
+
 import React, { useState, useEffect } from "react";
-//img
-// import samsung from "../../assets/companyLogos/samsung.png";
-// import google from "../../assets/companyLogos/google.svg";
-// import lg from "../../assets/companyLogos/lg.svg";
-// import microsoft from "../../assets/companyLogos/microsoft.svg";
-// import slack from "../../assets/companyLogos/slack.svg";
-// import sony from "../../assets/companyLogos/sony.png";
-import Marquee from "react-fast-marquee";
-// import Kama from '/public/partners/kamasys_logo.jpg'
-import Kamasys from '../../assets/partners/kamasys_logo.jpg'
-import GmbH from '../../assets/partners/mk_logic_rgb_338_white.png'
-import Osma from '../../assets/partners/logo.a80f457e.svg'
-import HTP from '../../assets/partners/Copy of htpkr_logo PNG.png'
-import Grand from "../../assets/partners/logo_grand.png"
-import './SliderNew.css'
+import Kamasys from "../../assets/partners/kamasys_logo.jpg";
+import GmbH from "../../assets/partners/mk_logic_rgb_338_white.png";
+import Osma from "../../assets/partners/logo.a80f457e.svg";
+import HTP from "../../assets/partners/Copy of htpkr_logo PNG.png";
+import Grand from "../../assets/partners/logo_grand.png";
+import "./SliderNew.css";
 
 const SliderNew = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const slides=[Kamasys, GmbH, Osma, HTP, Grand]
-    // const slides = ['/public/partners/kamasys_logo.jpg', '/public/partners/htpkr.png','/public/partners/logo_grand.png', '/public/partners/mk_logic.png', '/public/partners/OSMA.svg'];
+    const slides = [Kamasys, GmbH, Osma, HTP, Grand];
     const slideCount = slides.length;
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % slideCount);
-      }, 6000); // Adjust the interval duration (in milliseconds) based on your preference
-  
-      return () => clearInterval(interval);
-    }, [slideCount]);
-  
-    return (
-      <div className="slider">
-        <Marquee velocity={10}>
-          {slides.map((img, index) => (
-            <div key={index} className="slide">
-              <img src={img} alt="company" />
-            </div>
-          ))}
-        </Marquee>
-      </div>
-    );
-}
 
-export default SliderNew
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % slideCount);
+        }, 6000);
+
+        return () => clearInterval(interval);
+    }, [slideCount]);
+
+    return (
+        <div className="slider">
+            <div className="slider-track" style={{ display: "flex", gap: "20px" }}>
+                {slides.concat(slides).map((img, index) => (
+                    <div key={index} className="slide">
+                        <img src={img} alt="company" />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default SliderNew;
