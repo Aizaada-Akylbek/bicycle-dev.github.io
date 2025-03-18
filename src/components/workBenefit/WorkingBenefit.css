@@ -10,9 +10,10 @@
   }
   .savings-main-block{
     display: flex;
-    /* flex-direction: center; */
     justify-content: center;
-    margin-top: 4%;
+
+    height: auto; 
+    width: 70%; 
   }
   .savings-item {
     text-align: center;
@@ -29,13 +30,31 @@
     margin-top: 2rem;
     z-index: 10;
   }
- .medium{
+  .savings-card-long {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.04); 
+    margin-top: 4%;
+    padding: 2%;
+    border-radius: 20px;
+  }
+  .savings-item-long{
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+
+ /* .medium{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
-  }
+  } */
 
 .savings-item h2 {
     margin-top: 10px;
