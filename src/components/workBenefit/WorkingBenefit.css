@@ -8,12 +8,44 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  .savings-grid-2{
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    background-color:green ;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; 
+
+  }
+  .savings-grid-2 >.savings-card{
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .savings-grid-2>.savings-card.css-66gjpw-MuiResponsiveChart-container>svg{
+
+    width: 10% !important;
+    margin-left: 60px;
+    padding-left: 60px;
+    background-color:yellow
+
+
+  }
   .savings-main-block{
     display: flex;
     justify-content: center;
-
+    height: auto;
+    border-radius: 20px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.04);  
+    padding: 65px 25px;
+    margin-top: 2rem;
     height: auto; 
-    width: 70%; 
+    width: 80%; 
+    margin: 10px auto;
+
   }
   .savings-item {
     text-align: center;
@@ -38,13 +70,19 @@
     margin-top: 4%;
     padding: 2%;
     border-radius: 20px;
+    /* margin-top: 2rem; */
+
   }
   .savings-item-long{
     width: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+
+    border-radius: 20px;
+
+
     
   }
 
@@ -74,6 +112,26 @@
 .savings-title-bold{
   font-weight: bold;
 }
+@media screen and (max-width:950px) {
+  .savings-item-long{
+    background-color:pink;
+    /* width: 50%; */
+    /* width: 40%; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .savings-main-block{
+    padding: 45px 15px;
+  }
+  .savings-item-long .MuiCharts-PieChart-root {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+}
 @media screen and (max-width:843px) {
 .savings-grid{
   flex-direction: column;
@@ -83,13 +141,26 @@
   width: 60%;
 }
 .savings-main-block{
-  background-color:yellow
+  /* display: block; */
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
 }
 .savings-item-long {
-  background-color:blue;
   width: 80%;
+  /* background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.04); 
+  margin-top: 4%;
+  padding: 2%;
+  border-radius: 20px; */
 }
   
+}
+@media (max-width: 768px) {
+  /* .savings-item-long .MuiCharts-PieChart-root {
+    width: 150px !important;
+    height: 150px !important;
+  } */
 }
 
 
@@ -101,4 +172,11 @@
     width: 100%;
   }
   
+}
+.css-66gjpw-MuiResponsiveChart-container{
+  width: 100% !important;
+  /* background-color:pink */
+}
+.css-66gjpw-MuiResponsiveChart-container>svg{
+  width: 100% !important ;
 }

@@ -92,6 +92,9 @@
     .card-team {
       margin-bottom: 3%;
     }
+    .image-container{
+      width: 80%;
+    }
   }
   
   @media screen and (max-width: 385px) {

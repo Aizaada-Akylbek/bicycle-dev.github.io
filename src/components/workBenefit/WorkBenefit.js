@@ -113,7 +113,7 @@ import { useTranslation } from 'react-i18next';
 
 const WorkBenefit = () => {
   const { t } = useTranslation();
-  const [chartWidth, setChartWidth] = useState(400);
+  const [chartWidth, setChartWidth] = useState(100);
 
   useEffect(() => {
     const handleResize = () => {
@@ -156,15 +156,14 @@ const WorkBenefit = () => {
         ))}
       </div>
 
-      <div className='savings-main-block'>
+      <div className='savings-grid-2'>
         {[
           { value: 3.5, total: 10, label: "35%" },
           { value: 2, total: 10, label: "20%" },
         ].map((data, index) => (
-          <div key={index} className='savings-item-long medium'>
-            <h2>
+          <div key={index} className='savings-item savings-card'>
               <div className='savings-title'>{index === 0 ? t("Savings on Salary") : t("Savings on Employer Social Contributions")}</div>
-            </h2>
+              <h2>
             <PieChart
               series={[
                 {
@@ -176,12 +175,14 @@ const WorkBenefit = () => {
               ]}
               width={chartWidth}
               height={chartWidth / 2}
+              
             />
+            </h2>
             <h2>{data.label} {t("saved")}</h2>
           </div>
         ))}
       </div>
-    </div>
+      </div>
   );
 };
 
