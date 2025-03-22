@@ -74,7 +74,7 @@ const PartnersFeedback = () => {
           <h5>{slides[currentSlide].position}</h5>
         </div>
         <div className="slider-buttons">
-          <button className='slide-button-square' onClick={goToPreviousSlide}></button>
+          <button className='slide-button-square' onClick={goToNextSlide}></button>
           {slides.map((slide, index) => (
             <button
               key={index}

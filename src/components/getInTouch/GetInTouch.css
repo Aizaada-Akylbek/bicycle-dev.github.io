@@ -1,10 +1,8 @@
 
   .footerLogos {
-    /* width: 100%;  */
-    /* border:2px solid #11295a; */
-    /* background-color:#11295a; */
     border-radius:12px;
     padding:40px 20px;
+    width: 50%;
   }
   .titleWork {
     font-weight: 200;
@@ -12,11 +10,6 @@
     line-height: 30px;
     margin-bottom: 10px;
   }
-  /* .copyright {
-    font-size: 14px;
-    font-weight: 400;
-    font-weight: 200;
-  } */
   .logoLinks {
     margin: 5% 0;
   }
@@ -30,11 +23,7 @@
     width: 100%;
 
   }
-  .footer-inp{
-    /* width: 50%; */
-  }
   .footerContact {
-    /* width: 50%; */
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
@@ -64,32 +53,6 @@
     background-color: #d8eeff;
     color: #11295a;
   }
-  /* .footerBtn i {
-    font-size: 24px;
-  } */
-  .footerNavList {
-    /* width: 25%; */
-    /* background-color:yellow */
-  }
-  /* .footerNavList li {
-    list-style: none;
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: white;
-  } */
-  /* .footerNavList li a {
-    text-decoration: none;
-  } */
-  /* .footerNavList a {
-    font-weight: 300;
-    font-size: 18px;
-  } */
-  /* .footerNavList h2 {
-    font-size: 22px;
-    font-size: 700;
-    margin-bottom: 10%;
-    font-family: Raleway;
-  } */
   
   .modal-overlay {
     position: fixed;
@@ -106,25 +69,7 @@
     font-weight: 500;
     text-align: center;
   }
-  /* .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  
-  /* .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  }
-   */
+
   .spinner {
     width: 20px;
     height: 20px;
@@ -151,10 +96,7 @@
     color:red;
     margin-top: 5px;
   }
-  /* .formGetInTouch{
-    max-width: 100% !important;
-    background-color:green
-  } */
+
    @media screen and (max-width:1000px) {
     .footerContact{
       width: 100%;
@@ -165,40 +107,13 @@
     
    }
   @media screen and (max-width: 770px) {
-    /* .footerBlocks {
-      flex-direction: column;
-      align-items: center;
-    } */
     .footerContact {
       width: 100%;
       margin: 40px 0 64px;
     }
-    /* .footerLogos {
-      margin-bottom: 4%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    } */
     .formGetInTouch {
       width: 100%;
     }
-    /* .footerNav {
-      flex-direction: column;
-      align-items: center;
-    }
-    .footerNavList h2 {
-      margin: 40px 0 24px;
-    }
-    .footerNavList li {
-      width: 100%;
-    } */
-    /* .logoLinks {
-      width: 100%;
-      text-align: center;
-    }
-    .copyright {
-      text-align: center;
-    } */
   }
   @media screen and (max-width: 455px) {
     footer {
