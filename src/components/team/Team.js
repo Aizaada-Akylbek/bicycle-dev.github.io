@@ -30,12 +30,12 @@ const Team = () => {
       position: t("Backend Developer"),
       lnkdn: "https://www.linkedin.com/in/adilet-ryskulov-b4a11920a/",
     },
-    {
-      img: Aizaada,
-      name: t("Aizaada Akylbekova"),
-      position: t("Frontend Developer"),
-      lnkdn: "https://www.linkedin.com/in/aizaada-akylbekova/",
-    },
+    // {
+    //   img: Aizaada,
+    //   name: t("Aizaada Akylbekova"),
+    //   position: t("Frontend Developer"),
+    //   lnkdn: "https://www.linkedin.com/in/aizaada-akylbekova/",
+    // },
   ];
   return (
     <div className="team container">
