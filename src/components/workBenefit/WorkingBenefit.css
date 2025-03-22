@@ -24,11 +24,10 @@
     justify-content: center;
   }
   .savings-grid-2>.savings-card.css-66gjpw-MuiResponsiveChart-container>svg{
-
     width: 10% !important;
     margin-left: 60px;
     padding-left: 60px;
-    background-color:yellow
+    /* background-color:yellow */
 
 
   }
