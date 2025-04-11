@@ -9,12 +9,14 @@
 }
 
 .partners h2 {
-    font-size: 32px;
     font-weight: 400;
     /* line-height: 48px; */
     letter-spacing: 0.4000000059604645px;
     text-align: center;
-    padding: 48px 0;
+    padding: 38px 0 20px;
+}
+.partner-review-text {
+    font-size: 22px;
 }
 
 .partner-user img {
@@ -57,7 +59,15 @@
 .slide-button-circle.active {
     background-color:#0C5AE9
 }
-
+.slider-content {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
 @media screen and (max-width:660px) {
     .partners h2 {
         font-size: 18px;

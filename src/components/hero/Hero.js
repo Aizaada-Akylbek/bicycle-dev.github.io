@@ -4,7 +4,7 @@ import CareerBtn from "../ui/careerBtn/CareerBtn";
 import EmployeesBtn from "../ui/employeesBtn/EmployeesBtn";
 import { useTranslation } from "react-i18next";
 
-const Hero = () => {
+const Hero = ({handleScroll}) => {
   const { t } = useTranslation();
   return (
     <div className="hero container dark-blue">
@@ -18,7 +18,7 @@ const Hero = () => {
         {t("We are pleased to offer a wide range of high quality IT services.")}
       </p>
       <div className="hero-btns">
-        <CareerBtn />
+        <CareerBtn handleScroll={handleScroll} />
         <EmployeesBtn />
       </div>
       <div className="xl-circle">

@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Employees.css";
-import Aizaada from "../assets/employeesImgs/Снимок экрана 2024-05-23 в 2.44.50 PM.png";
-import Zhandos from "../assets/team/Zhandos.jpg";
-import Adilet from "../assets/team/Adilet.jpg";
-import userImage2 from "../assets/employeesImgs/user2.png";
-
+import Aizaada from "../assets/team/Aizaada.png";
+import Adilet from "../assets/team/Adilet.JPG";
 import linkedin from "../assets/employeesImgs/LinkedIn.png";
 import DevOperations from "../components/ui/devOperations/DevOperations";
 import { useTranslation } from "react-i18next";
@@ -24,7 +21,7 @@ const Employees = () => {
       social: linkedin,
       job: "Frontend",
       descr: "There are many variations of passages of Lorem Ipsum available",
-      img: Zhandos,
+      // img: Zhandos,
     },
     {
       name: "Aizaada Akylbekova",

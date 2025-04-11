@@ -1,9 +1,8 @@
 import React from "react";
-import Askat from "../../assets/team/Askat.jpg";
+import Askat from "../../assets/team/Askat.JPG";
 import Farkhat from "../../assets/team/Farkhat.jpg";
-import Zhandos from "../../assets/team/Zhandos.jpg";
-import Adilet from "../../assets/team/Adilet.jpg";
-import Aizaada from '../../assets/employeesImgs/Снимок экрана 2024-05-23 в 2.44.50 PM.png';
+import Adilet from "../../assets/team/Adilet.JPG";
+import Aizaada from '../../assets/team/Aizaada.png';
 import { NavLink } from "react-router-dom";
 import LD from "../../assets/logoLinks/LinkedIn.svg";
 import "./Team.css";
@@ -30,12 +29,12 @@ const Team = () => {
       position: t("Backend Developer"),
       lnkdn: "https://www.linkedin.com/in/adilet-ryskulov-b4a11920a/",
     },
-    // {
-    //   img: Aizaada,
-    //   name: t("Aizaada Akylbekova"),
-    //   position: t("Frontend Developer"),
-    //   lnkdn: "https://www.linkedin.com/in/aizaada-akylbekova/",
-    // },
+    {
+      img: Aizaada,
+      name: t("Aizaada Akylbekova"),
+      position: t("Frontend Developer"),
+      lnkdn: "https://www.linkedin.com/in/aizaada-akylbekova/",
+    },
   ];
   return (
     <div className="team container">

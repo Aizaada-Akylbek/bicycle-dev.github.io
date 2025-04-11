@@ -8,10 +8,10 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 //components
 
-const CareerBtn = () => {
+const CareerBtn = ({handleScroll}) => {
   const { t } = useTranslation();
   return (
-      <NavLink to="/careers" className="info-block">
+      <NavLink onClick={handleScroll} className="info-block">
           <div className="info-title">
             <h4>{t("Customer Reviews")}</h4>
               <img src={RightLine} alt="employees" />

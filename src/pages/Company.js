@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import Hero from "../components/hero/Hero";
 import Slider from "../components/slider2/Slider2";
 import Mission from "../components/mission/Mission";
@@ -11,16 +11,21 @@ import WorkBenefit from "../components/workBenefit/WorkBenefit";
 import SliderNew from "../components/sliderNew/SliderNew";
 
 const Company = () => {
+  const targetRef = useRef(null);
+
+  const handleScroll = () => {
+    targetRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div>
-      <Hero />
+      <Hero handleScroll={handleScroll} />
       {/* <Slider /> */}
       {/* <Slider2/> */}
       <SliderNew/>
       <WorkBenefit/>
       <Mission />
       <Team />
-      <PartnersFeedback />
+      <PartnersFeedback targetRef={targetRef}/>
       <MakeBusiness />
       <Faq />
       <WorkingTogether />

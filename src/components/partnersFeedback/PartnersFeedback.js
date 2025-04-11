@@ -8,7 +8,8 @@ import Osma from '../../assets/partners/logo.a80f457e.svg';
 import { useTranslation } from 'react-i18next';
 
 
-const PartnersFeedback = () => {
+const PartnersFeedback = ({targetRef}) => {
+const [isFading, setIsFading] = useState(false);
   const {t}=useTranslation()
   const slides = [
     {
@@ -20,7 +21,7 @@ const PartnersFeedback = () => {
       logo:kamasys
     },
     {
-      text:t( "We needed temporary reinforcement for the optimization and migration of the smart home gadget certification platform from one technology stack to another, and Bicycle Dev quickly provided us with a frontend developer in the format of outstaffing. The specialist quickly integrated into the workflow, helped us bridge the staffing gap, ensured the smooth operation of the project, and made a valuable contribution to the final result."),
+      text:t( "For the optimization and migration of our platform for the certification of smart home devices to a new technology stack, we needed reinforcement at short notice. Bicycle Dev quickly provided us with an experienced frontend developer as part of outstaffing. The specialist quickly integrated into our team, bridged personnel bottlenecks and made a significant contribution to the smooth running of the project."),
       text2:t("We appreciate the flexibility and professionalism of Bicycle Dev and can recommend them as a reliable partner for both short-term and long-term tasks."),
       name: t('Mirko Klefker'),
       position: t('CEO, MK Logic GmbH'),
@@ -31,7 +32,7 @@ const PartnersFeedback = () => {
       text:
        t( "Bicycle Dev is an active resident of the High Technology Park of the Kyrgyz Republic and is successfully expanding IT exports to Europe. Thanks to its professional team and high work standards, the company demonstrates steady growth, creates new job opportunities, and contributes to the development of the country's IT industry."),
         text2:t("We are proud that Bicycle Dev represents Kyrgyzstan in the international market as a reliable technology partner, affirming the high level of domestic IT specialists."),
-      name: 'Chubak Temirov',
+      name: t('Chubak Temirov'),
       position: t('Deputy Director, HTP KR'),
       img:avatarkamasys,
       logo:HTP
@@ -51,23 +52,32 @@ const PartnersFeedback = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToSlide = (index) => {
-    setCurrentSlide(index);
+    changeSlideSmoothly(index);
   };
 
-  const goToPreviousSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
-  };
+  // const goToPreviousSlide = () => {
+  //   setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
+  // };
 
   const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+    // setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+    const nextIndex = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+    changeSlideSmoothly(nextIndex);
+  };
+  const changeSlideSmoothly = (index) => {
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentSlide(index);
+      setIsFading(false);
+    }, 300); // Должно совпадать с CSS transition time
   };
 
   return (
-    <div className='partners dark-blue'>
-      <div className="container">
+    <div className='partners dark-blue' ref={targetRef}>
+      <div className={`container slider-content ${isFading ? 'fade-out' : ''}`}>
         <img src={slides[currentSlide].logo} alt="#" className='company-title' />
-        <h2>{slides[currentSlide].text}</h2>
-        <h2>{slides[currentSlide].text2}</h2>
+        <h2 className='partner-review-text'>{slides[currentSlide].text}</h2>
+        <h2 className='partner-review-text'>{slides[currentSlide].text2}</h2>
         <div className='partner-user'>
           {/* <img src={slides[currentSlide].img} alt="avatar" /> */}
           <h4>{slides[currentSlide].name}</h4>
