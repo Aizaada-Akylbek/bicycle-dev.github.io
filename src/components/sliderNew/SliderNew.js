@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import Kamasys from "../../assets/partners/kamasys_logo.jpg";
 import GmbH from "../../assets/partners/mk_logic_rgb_338_white.png";
