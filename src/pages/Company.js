@@ -1,6 +1,5 @@
 import React, {useRef} from "react";
 import Hero from "../components/hero/Hero";
-import Slider from "../components/slider2/Slider2";
 import Mission from "../components/mission/Mission";
 import Team from "../components/team/Team";
 import PartnersFeedback from "../components/partnersFeedback/PartnersFeedback";
