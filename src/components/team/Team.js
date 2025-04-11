@@ -1,7 +1,7 @@
 import React from "react";
-import Askat from "../../assets/team/Askat.JPG";
+import Askat from "../../assets/team/Askat.jpg";
 import Farkhat from "../../assets/team/Farkhat.jpg";
-import Adilet from "../../assets/team/Adilet.JPG";
+import Adilet from "../../assets/team/Adilet.jpg";
 import Aizaada from '../../assets/team/Aizaada.png';
 import { NavLink } from "react-router-dom";
 import LD from "../../assets/logoLinks/LinkedIn.svg";

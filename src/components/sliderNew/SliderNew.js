@@ -22,7 +22,7 @@ const SliderNew = () => {
     return (
         <div className="slider">
             <div className="slider-track" style={{ display: "flex", gap: "20px" }}>
-                {slides.concat(slides).map((img, index) => (
+                {[...slides, ...slides, ...slides].map((img, index) => (
                     <div key={index} className="slideNew">
                         <img src={img} alt="company" />
                     </div>
