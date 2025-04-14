@@ -172,7 +172,6 @@ const Footer = () => {
             </div>
             <div className="contact-us">
               <div className="contact-tel">
-                {" "}
                <NavLink> <img src={Phone} alt="" /> </NavLink>
                 <NavLink to="https://wa.me/00491775571132"><img src={WhatsApp} alt="" /></NavLink>
 

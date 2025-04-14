@@ -5,6 +5,7 @@ import PartnersFeedback from "../components/partnersFeedback/PartnersFeedback";
 import Review from "../components/review/Review";
 import DevOperations from "../components/ui/devOperations/DevOperations";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const Partners = () => {
   const {t}=useTranslation()
@@ -20,8 +21,9 @@ const Partners = () => {
             {t("Step into our multicultural environment")} <br /> {t("filled with creative and driven individuals.")} 
           </p>
 
-          <button className="main-btn">Label</button>
-        </div>
+         <NavLink to="/contacts" className="main-btn">
+              {t('Contact us')}
+            </NavLink>        </div>
       </div>
       <PartnersCards />
       {/* <Review /> */}
