@@ -113,16 +113,16 @@
   font-weight: bold;
 }
 @media screen and (max-width:950px) {
-  .savings-item-long{
+  /* .savings-item-long{
     background-color:pink;
-    /* width: 50%; */
-    /* width: 40%; */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items:flex-end;
+    background-color:yellow;
     margin: 0 auto;
-  }
+  } */
   .savings-main-block{
     padding: 45px 15px;
   }
@@ -136,6 +136,9 @@
 .savings-grid{
   flex-direction: column;
   align-items:center;
+}
+.savings-grid-2 {
+  flex-direction: column;
 }
 .savings-card{
   width: 60%;
@@ -185,13 +188,16 @@
   .css-66gjpw-MuiResponsiveChart-container>svg{
     margin-left: 50px;
   }
-  .savings-grid-2{
+  /* .savings-grid-2{
     flex-direction: column;
-    /* background-color:green ; */
-    justify-content: center; /* Центрирование по горизонтали */
+    justify-content: center;
     align-items: center; 
 
-  }
+  } */
+   .savings-card-percent {
+    width: 100%;
+    background-color:red
+   }
   
 }
 @media screen and (max-width:500px) {

@@ -126,8 +126,9 @@
   
     }
     .contact-img {
-      max-width: 100vw;
-      height: 80vh;
+      /* max-width: 100vw;
+      height: 80vh; */
+      display: none;
     }
   }
   @media screen and (max-width: 385px) {

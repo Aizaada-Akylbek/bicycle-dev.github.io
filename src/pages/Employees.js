@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Employees.css";
 import Aizaada from "../assets/team/Aizaada.png";
-import Adilet from "../assets/team/Adilet.jpg";
+import Adilet from "../assets/team/AdiletRyskulov.jpg";
 import linkedin from "../assets/employeesImgs/LinkedIn.png";
 import DevOperations from "../components/ui/devOperations/DevOperations";
 import { useTranslation } from "react-i18next";
