@@ -163,7 +163,7 @@ const WorkBenefit = () => {
         ].map((data, index) => (
           <div key={index} className='savings-item savings-card'>
               <div className='savings-title'>{index === 0 ? t("Savings on Salary") : t("Savings on Employer Social Contributions")}</div>
-              {/* <h2> */}
+              <h2>
             <PieChart
               series={[
                 {
@@ -177,7 +177,7 @@ const WorkBenefit = () => {
               height={chartWidth / 2}
               
             />
-            {/* </h2> */}
+            </h2>
             <h2>{data.label} {t("saved")}</h2>
           </div>
         ))}
