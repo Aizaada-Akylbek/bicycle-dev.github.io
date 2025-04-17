@@ -1,10 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import EmployeesBtn from "../components/ui/employeesBtn/EmployeesBtn";
-import CareerBtn from "../components/ui/careerBtn/CareerBtn";
+// import { NavLink } from "react-router-dom";
+// import EmployeesBtn from "../components/ui/employeesBtn/EmployeesBtn";
+// import CareerBtn from "../components/ui/careerBtn/CareerBtn";
 import AppCalendar from "../components/appCalendar/AppCalendar";
 import "../styles/Calendar.css";
-import DevOperations from "../components/ui/devOperations/DevOperations";
+// import DevOperations from "../components/ui/devOperations/DevOperations";
 import { useTranslation } from "react-i18next";
 
 const Calendar = () => {

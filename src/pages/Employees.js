@@ -17,13 +17,6 @@ const Employees = () => {
       img: Adilet,
     },
     {
-      name: "Zhandos Manapov",
-      social: linkedin,
-      job: "Frontend",
-      descr: "There are many variations of passages of Lorem Ipsum available",
-      // img: Zhandos,
-    },
-    {
       name: "Aizaada Akylbekova",
       social: linkedin,
       job: "Frontend",
