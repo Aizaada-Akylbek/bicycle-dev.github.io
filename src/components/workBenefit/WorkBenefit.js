@@ -110,6 +110,7 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import Diversity2Icon from '@mui/icons-material/Diversity2';
 import './WorkingBenefit.css';
 import { useTranslation } from 'react-i18next';
+import CustomPieChart from '../customPieChart/CustomPieChart';
 
 const WorkBenefit = () => {
   const { t } = useTranslation();
@@ -156,7 +157,7 @@ const WorkBenefit = () => {
         ))}
       </div>
 
-      <div className='savings-grid-2'>
+      {/* <div className='savings-grid-2'>
         {[
           { value: 3.5, total: 10, label: "35%" },
           { value: 2, total: 10, label: "20%" },
@@ -181,7 +182,23 @@ const WorkBenefit = () => {
             <h2>{data.label} {t("saved")}</h2>
           </div>
         ))}
+      </div> */}
+      <div className='savings-grid-2'>
+  {[
+    { value: 3.5, total: 10, label: "35%" },
+    { value: 2, total: 10, label: "20%" },
+  ].map((data, index) => (
+    <div key={index} className='savings-item savings-card'>
+      <div className='savings-title'>
+        {index === 0 ? "Savings on Salary" : "Savings on Employer Social Contributions"}
       </div>
+      <div className="piechart-wrapper">
+        <CustomPieChart value={data.value} total={data.total} size={120} />
+      </div>
+      <h2>{data.label} saved</h2>
+    </div>
+  ))}
+</div>
       </div>
   );
 };

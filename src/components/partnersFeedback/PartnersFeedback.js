@@ -75,7 +75,11 @@ const [isFading, setIsFading] = useState(false);
   return (
     <div className='partners dark-blue' ref={targetRef}>
       <div className={`container slider-content ${isFading ? 'fade-out' : ''}`}>
-        <img src={slides[currentSlide].logo} alt="#" className='company-title' />
+        {/* <img src={slides[currentSlide].logo} alt="#" className='company-title' /> */}
+        <div className="company-title-wrapper">
+          <img src={slides[currentSlide].logo} alt="Company Logo" className="company-title" />
+        </div>
+
         <h2 className='partner-review-text'>{slides[currentSlide].text}</h2>
         <h2 className='partner-review-text'>{slides[currentSlide].text2}</h2>
         <div className='partner-user'>
@@ -84,7 +88,13 @@ const [isFading, setIsFading] = useState(false);
           <h5>{slides[currentSlide].position}</h5>
         </div>
         <div className="slider-buttons">
-          <button className='slide-button-square' onClick={goToNextSlide}></button>
+          {/* <button className='slide-button-square' onClick={goToNextSlide}></button> */}
+          <button
+            type="button"
+            className='slide-button-square'
+            onClick={goToNextSlide}
+          ></button>
+{/* 
           {slides.map((slide, index) => (
             <button
               key={index}
@@ -93,7 +103,16 @@ const [isFading, setIsFading] = useState(false);
             >
               
             </button>
-          ))}
+          ))} */}
+          {slides.map((slide, index) => (
+              <button
+                type="button"
+                key={index}
+                className={index === currentSlide ? 'slide-button-circle active' : 'slide-button-circle'}
+                onClick={() => goToSlide(index)}
+              ></button>
+            ))}
+
           {/* <button className='slide-button-circle' onClick={goToNextSlide}></button> */}
         </div>
       </div>

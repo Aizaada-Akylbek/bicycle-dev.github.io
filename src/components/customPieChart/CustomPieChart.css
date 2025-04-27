@@ -1,0 +1,51 @@
+.savings-grid-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .savings-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08), 0 0 4px rgba(0, 0, 0, 0.04);
+    padding: 40px 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .piechart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  /* Текст */
+  .savings-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .savings-card h2 {
+    margin-top: 10px;
+  }
+  
+  /* Адаптив */
+  @media screen and (max-width: 600px) {
+    .savings-grid-2 {
+      flex-direction: column;
+    }
+    .savings-card {
+      width: 80%; /* На маленьком экране шире карта */
+    }
+    .piechart-wrapper svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
