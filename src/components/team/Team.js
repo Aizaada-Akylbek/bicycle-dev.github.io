@@ -26,13 +26,13 @@ const Team = () => {
     {
       img: Adilet,
       name: t("Adilet Ryskulov"),
-      position: t("Backend Developer"),
+      position: t("Backend Development Department"),
       lnkdn: "https://www.linkedin.com/in/adilet-ryskulov-b4a11920a/",
     },
     {
       img: Aizaada,
       name: t("Aizaada Akylbekova"),
-      position: t("Frontend Developer"),
+      position: t("Frontend Development Department"),
       lnkdn: "https://www.linkedin.com/in/aizaada-akylbekova/",
     },
   ];
