@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.18bdf2e2.css",
-    "main.js": "/static/js/main.d8f5b4c7.js",
+    "main.css": "/static/css/main.6a57b698.css",
+    "main.js": "/static/js/main.d1bf7c47.js",
     "static/js/453.5e0ec283.chunk.js": "/static/js/453.5e0ec283.chunk.js",
     "static/media/partnersBg.svg": "/static/media/partnersBg.00f22a0b5709e58346bb.svg",
     "static/media/Careers.jpg": "/static/media/Careers.efbad84c51d784f3184f.jpg",
-    "static/media/Снимок экрана 2024-05-23 в 2.44.50 PM.png": "/static/media/Снимок экрана 2024-05-23 в 2.44.50 PM.03c90b884dd286dacf23.png",
+    "static/media/Aizaada.png": "/static/media/Aizaada.03c90b884dd286dacf23.png",
     "static/media/careersBg.png": "/static/media/careersBg.e2e250d703252d6dad51.png",
     "static/media/Image.png": "/static/media/Image.88e5095ef52c5b30bfba.png",
     "static/media/samsung.png": "/static/media/samsung.6d3f5639dcea521f8c60.png",
     "static/media/Farkhat.jpg": "/static/media/Farkhat.f8a98e509a4f57df96cd.jpg",
-    "static/media/Askat.jpg": "/static/media/Askat.bd54fe1a482fd2685ed8.jpg",
-    "static/media/Zhandos.jpg": "/static/media/Zhandos.5aa6dc2656237a1d6c3b.jpg",
+    "static/media/Askat.jpg": "/static/media/Askat.2372ab11bd5bf0a168b8.jpg",
+    "static/media/AdiletRyskulov.jpg": "/static/media/AdiletRyskulov.31d77a1e60f49a789805.jpg",
     "static/media/mackbook.png": "/static/media/mackbook.70f1f885808faa600431.png",
-    "static/media/Adilet.jpg": "/static/media/Adilet.a37bb417eb53cc20da00.jpg",
     "static/media/oyourbusiness.png": "/static/media/oyourbusiness.d88152fac36932ea6a35.png",
-    "static/media/user2.png": "/static/media/user2.e7a37276b26365151489.png",
     "static/media/kamasys_logo.jpg": "/static/media/kamasys_logo.5a2f7728879f38bd856c.jpg",
     "static/media/logo.a80f457e.svg": "/static/media/logo.a80f457e.a80f457e0eda92db08a1bc8d5fc8d259.svg",
     "static/media/Copy of htpkr_logo PNG.png": "/static/media/Copy of htpkr_logo PNG.1192d459aed2f67afaae.png",
+    "static/media/logo_grand.png": "/static/media/logo_grand.f85bf89d5587d5796f2f.png",
     "static/media/sony.png": "/static/media/sony.49672ace1d4a4eca64e9.png",
     "static/media/CircleBicycle.svg": "/static/media/CircleBicycle.61e558e46a5ac03611e434ddee287006.svg",
     "static/media/MainLogo.svg": "/static/media/MainLogo.7034fc3d38b0ff479ef8dc80d9f35b36.svg",
@@ -40,7 +39,7 @@
     "static/media/notebook.svg": "/static/media/notebook.2761c644f0c0ddfba7678157bfa8120f.svg",
     "static/media/lg.svg": "/static/media/lg.403123adb09c6ffa2da0932849ed10c9.svg",
     "static/media/Whatsapp.svg": "/static/media/Whatsapp.2a17dbef72bc3692faf303fbae3f56ae.svg",
-    "static/media/Instagram.svg": "/static/media/Instagram.c9b5c407b0e935036d10fbc0e87be5cc.svg",
+    "static/media/Instagram.svg": "/static/media/Instagram.6ca197d07c8a071394a47f91455b9750.svg",
     "static/media/LinkedIn.svg": "/static/media/LinkedIn.ec00ea656a7e6b7c9f252df10046a225.svg",
     "static/media/Vector2.svg": "/static/media/Vector2.c2df080ef58391556514f32cb4e0cb23.svg",
     "static/media/Vector1.svg": "/static/media/Vector1.7f79363d4f32419232afd4628a706e27.svg",
@@ -49,12 +48,12 @@
     "index.html": "/index.html",
     "static/media/Facebook.svg": "/static/media/Facebook.fb7900daa96b2e2792e1aae90ce22cbd.svg",
     "static/media/Right.svg": "/static/media/Right.167366737e67e8b1219b9acf7404c9c3.svg",
-    "main.18bdf2e2.css.map": "/static/css/main.18bdf2e2.css.map",
-    "main.d8f5b4c7.js.map": "/static/js/main.d8f5b4c7.js.map",
+    "main.6a57b698.css.map": "/static/css/main.6a57b698.css.map",
+    "main.d1bf7c47.js.map": "/static/js/main.d1bf7c47.js.map",
     "453.5e0ec283.chunk.js.map": "/static/js/453.5e0ec283.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18bdf2e2.css",
-    "static/js/main.d8f5b4c7.js"
+    "static/css/main.6a57b698.css",
+    "static/js/main.d1bf7c47.js"
   ]
 }
