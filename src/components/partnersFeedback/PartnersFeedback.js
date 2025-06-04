@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect,useRef} from 'react';
 import './PartnersFeedback.css';
 import kamasys from '../../assets/partners/kamasys.svg';
 import avatarkamasys from '../../assets/partners/AvatarKamasys.png';
@@ -49,8 +49,23 @@ const [isFading, setIsFading] = useState(false);
     // Add more slides as needed
   ];
 
+
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const intervalRef = useRef(null);
+  const currentSlideRef = useRef(currentSlide);
+
+  useEffect(() => {
+  currentSlideRef.current = currentSlide;
+}, [currentSlide]);
+// useEffect(() => {
+//   intervalRef.current = setInterval(() => {
+//     const nextIndex = currentSlideRef.current === slides.length - 1 ? 0 : currentSlideRef.current + 1;
+//     changeSlideSmoothly(nextIndex);
+//   }, 3000); // 3 секунды
+
+//   return () => clearInterval(intervalRef.current);
+// }, []);
   const goToSlide = (index) => {
     changeSlideSmoothly(index);
   };
@@ -64,13 +79,29 @@ const [isFading, setIsFading] = useState(false);
     const nextIndex = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
     changeSlideSmoothly(nextIndex);
   };
+  // const changeSlideSmoothly = (index) => {
+  //   setIsFading(true);
+  //   setTimeout(() => {
+  //     setCurrentSlide(index);
+  //     setIsFading(false);
+  //   }, 300); // Должно совпадать с CSS transition time
+  // };
   const changeSlideSmoothly = (index) => {
-    setIsFading(true);
-    setTimeout(() => {
-      setCurrentSlide(index);
-      setIsFading(false);
-    }, 300); // Должно совпадать с CSS transition time
-  };
+  setIsFading(true); // запускаем плавное исчезновение
+  setTimeout(() => {
+    setCurrentSlide(index); // меняем контент после fade-out
+    setIsFading(false);     // запускаем плавное появление
+  }, 500); // 0.5s fade-out
+};
+useEffect(() => {
+  const interval = setInterval(() => {
+    const nextIndex = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+    changeSlideSmoothly(nextIndex);
+  }, 5000); // каждые 5 секунд
+
+  return () => clearInterval(interval);
+}, [currentSlide]);
+
 
   return (
     <div className='partners dark-blue' ref={targetRef}>

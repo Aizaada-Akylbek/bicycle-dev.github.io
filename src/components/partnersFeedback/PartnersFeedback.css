@@ -3,6 +3,15 @@
     padding: 10% 0px;
     text-align: center;
 }
+.slider-content {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-content.fade-out {
+  opacity: 0;
+}
+
 
 /* .company-title {
     width: 20%;
